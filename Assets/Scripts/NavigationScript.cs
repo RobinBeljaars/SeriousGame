@@ -6,19 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class NavigationScript : MonoBehaviour
 {
-    public string sceneName;
+    [Header("Parameters")]
+    public NavigationMode mode;
+    public NavigateScene sceneName;
 
-    void OnMouseOver() {
-        
-    }
+    [Header("UI to toggle on/off on element click")]
+    public GameObject[] UIToToggle;
 
     void OnMouseUp()
     {
         Debug.Log("Test");
         if (gameObject.CompareTag("SwitchScene"))
         {
-            SceneManager.LoadScene(sceneName);
-            Debug.Log("Switching Scenes");
+            switch (mode)
+            {
+
+                case NavigationMode.scene:
+                    SceneManager.LoadScene((int) sceneName);
+                    Debug.Log("Switching Scenes");
+                    break;
+                case NavigationMode.ui:
+                    foreach (GameObject item in UIToToggle)
+                    {
+                        item.SetActive(!item.activeInHierarchy);
+                    }
+                    // UIToToggle.SetActive(!UIToToggle.activeInHierarchy);
+                    break;
+            }
         }
     }
 }
