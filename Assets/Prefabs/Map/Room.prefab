@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.83137256}
+  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -314,6 +314,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8414923725838611007}
     m_Modifications:
+    - target: {fileID: 634472212, guid: e3615461cc85b27468126cbf2fc7cd06, type: 3}
+      propertyPath: mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 634472212, guid: e3615461cc85b27468126cbf2fc7cd06, type: 3}
+      propertyPath: UIToToggle.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 634472212, guid: e3615461cc85b27468126cbf2fc7cd06, type: 3}
+      propertyPath: UIToToggle.Array.data[0]
+      value: 
+      objectReference: {fileID: 8414923725838610944}
     - target: {fileID: 7015204523359754516, guid: e3615461cc85b27468126cbf2fc7cd06, type: 3}
       propertyPath: m_Enabled
       value: 1
