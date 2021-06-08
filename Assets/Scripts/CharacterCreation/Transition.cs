@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
-    public string gameSceneName; //Should be the MAP
+    public string sceneWhenStartingTheGame; 
     public CharacterCarousel characterCarousel;
 
     
@@ -26,10 +26,10 @@ public class Transition : MonoBehaviour
 
 
         //We let CharacterCarousel decide if we can start a game or not.
-        if(characterCarousel.setCharacter()){
+        if(characterCarousel.SetCharacter()){
             AudioController.Instance.PlayButtonPressedSound();
-            Debug.Log("Attempting to start: "+gameSceneName);
-            SceneManager.LoadScene(gameSceneName);
+            Debug.Log("Attempting to start: "+sceneWhenStartingTheGame);
+            SceneManager.LoadScene(sceneWhenStartingTheGame);
         }
         Debug.Log("Not enough to start!");
     }

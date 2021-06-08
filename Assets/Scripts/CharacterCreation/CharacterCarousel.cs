@@ -51,11 +51,11 @@ public class CharacterCarousel : MonoBehaviour
         Debug.Log("Text: "+characterName);
     }
 
-    public bool setCharacter(){
+    public bool SetCharacter(){
         if(characterName!=""){
             Debug.Log("Charachter can be set");
-        BaseCharacter.Instance.setAvatar(avatarImage.GetComponent<Image>().sprite);
-        BaseCharacter.Instance.setCharacterNickName(characterName);
+        BaseCharacter.Instance.SetAvatar(avatarImage.GetComponent<Image>().sprite);
+        BaseCharacter.Instance.SetCharacterNickName(characterName);
         return true;
         }
         error.text ="Kies eerst een bijnaam!";

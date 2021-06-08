@@ -52,11 +52,37 @@ public static BaseCharacter Instance;
     {
     }
 
-    public void setCharacterNickName(string nickName){
+    public void SetCharacterNickName(string nickName){
         this.nickName=nickName;
     }
 
-    public void setAvatar(Sprite avatar){
+    public void SetAvatar(Sprite avatar){
         this.avatar=avatar;
+    }
+
+    public void IncrementMoney(float amount){
+        money=money+amount;
+    }
+
+    public void DecrementMoney(float amount){
+        money=money-amount;
+    }
+
+    public void IncrementEnergy(float amount){
+        energy=energy+amount;
+    }
+
+    public void DecrementEnergy(float amount){
+        energy=energy-amount;
+    }
+
+    public void IncrementHappiness(float amount){
+        happiness=happiness+amount;
+        //TODO: Change sprite when happiness changes
+    }
+
+    public void DecrementHappiness(float amount){
+        happiness=happiness-amount;
+        //TODO: Change sprite when happiness changes
     }
 }
