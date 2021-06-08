@@ -1,0 +1,64 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class CharacterCarousel : MonoBehaviour
+{
+    public List<Sprite> sprites;
+    public Text error;
+    private GameObject avatarImage;
+    private int location=0;
+
+    private string characterName="";
+    // Start is called before the first frame update
+    void Start()
+    {
+        //Setting reference to image
+        avatarImage = GameObject.Find ("AvatarImages");
+        Debug.Log("Added sprites to list: "+sprites.Count);
+
+		//Setting the first images by default
+		avatarImage.GetComponent<Image>().sprite = sprites[location];
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+
+    public void MoveRight(){
+        if(location<sprites.Count-1){
+            location++;
+        } else{
+            location=0;
+        }
+        avatarImage.GetComponent<Image>().sprite = sprites[location];
+    }
+
+    public void MoveLeft(){
+        if(location>0){
+            location--;
+            
+        }else{
+            location = sprites.Count-1;
+        }
+        avatarImage.GetComponent<Image>().sprite = sprites[location]; 
+    }
+
+    public void ReadStringInpunt(string characterName){
+        this.characterName=characterName;
+        Debug.Log("Text: "+characterName);
+    }
+
+    public bool setCharacter(){
+        if(characterName!=""){
+            Debug.Log("Charachter can be set");
+        BaseCharacter.Instance.setAvatar(avatarImage.GetComponent<Image>().sprite);
+        BaseCharacter.Instance.setCharacterNickName(characterName);
+        return true;
+        }
+        error.text ="Kies eerst een bijnaam!";
+        return false;
+    }
+}

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e9c8f66a3867c8046866d4d58c446178
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - characterCreationMusic: {instanceID: 0}
+  - buttonPressSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
