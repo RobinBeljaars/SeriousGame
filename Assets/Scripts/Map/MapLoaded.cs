@@ -10,20 +10,29 @@ public class MapLoaded : MonoBehaviour
     public Text ageText;
     public Text moodText;
     public Text EducationText;
+    public Text moneyText;
+    public Text energyText;
 
     [Header("Parameters")]
     public Mood[] moods;
     public Education[] educations;
+
+    private float prevMoney = 0.0f;
     void Update()
     {
         UpdateAvatar();
         UpdateAge();
         UpdateMood();
+        UpdateMoney();
     }
 
     void UpdateAvatar()
     {
-        imageAvatar.sprite = Game.currentGame.PlayerData.getAvatar();
+        Sprite newImage = Game.currentGame.PlayerData.getAvatar();
+        if (newImage != null)
+        {
+            imageAvatar.sprite = Game.currentGame.PlayerData.getAvatar();
+        }
     }
     void UpdateAge()
     {
@@ -43,7 +52,28 @@ public class MapLoaded : MonoBehaviour
         }
     }
 
-    void UpdateEductation(){
+    void UpdateMoney()
+    {
+        float moneyValue = Game.currentGame.PlayerData.getMoney();
+        moneyText.text = "€ " + moneyValue.ToString();
+        if (moneyValue >= prevMoney)
+        {
+            moneyText.color = Color.green;
+        }
+        else if (moneyValue < prevMoney)
+        {
+            moneyText.color = Color.red;
+        }
+        prevMoney = moneyValue;
+    }
+
+    void UpdateEnergy()
+    {
+        energyText.text = Game.currentGame.PlayerData.getEnergy().ToString();
+    }
+
+    void UpdateEductation()
+    {
         float education = 0;
         foreach (Education item in educations)
         {
