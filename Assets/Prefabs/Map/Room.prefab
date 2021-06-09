@@ -175,6 +175,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leren
       objectReference: {fileID: 0}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b62aac7fb702f54aa477bef708ae413, type: 3}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8605327959666624634, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Text
       value: Leren
@@ -293,6 +301,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slapen
       objectReference: {fileID: 0}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c29cee55669ee2845828e64311b99b86, type: 3}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8605327959666624634, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Text
       value: Slapen
@@ -410,6 +426,22 @@ PrefabInstance:
     - target: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Name
       value: Bestellen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 579c4d5b2aa357541ac1ad684a2c825b, type: 3}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967732654968081987, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967732654968081987, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8605327959666624634, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Text
@@ -541,6 +573,14 @@ PrefabInstance:
       propertyPath: UIToToggle.Array.data[1]
       value: 
       objectReference: {fileID: 8414923725838610944}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b45c7a6b73f3fc488b96c82c3aa8352, type: 3}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5967732654968081987, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0.7
@@ -674,6 +714,14 @@ PrefabInstance:
     - target: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Name
       value: Gamen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8a7b47a8e7eca04aa525a343632e901, type: 3}
+    - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8605327959666624634, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Text
