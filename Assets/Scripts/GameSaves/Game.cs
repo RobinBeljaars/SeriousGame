@@ -3,11 +3,11 @@ using System.Collections;
  
 [System.Serializable]
 public class Game {
+    // Om een new game te starten gebruik je Game.currentGame = new Game();
     public static Game currentGame;
-    // public PlayerProperties playerProperties;
-    public BaseCharacter baseCharacter;
+    public BaseCharacter PlayerData;
     public Game(){
-        // playerProperties = new PlayerProperties();
-        baseCharacter = new BaseCharacter();
+        currentGame = this;
+        PlayerData = new BaseCharacter();
     }
  }

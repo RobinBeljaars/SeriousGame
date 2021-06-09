@@ -6,14 +6,14 @@ using System.IO;
 
 public static class SaveLoadGame
 {
-    public static List<Game> games = new List<Game>();
+    public static Game game;
 
     public static void Save()
     {
-        games.Add(Game.currentGame);
+        game = Game.currentGame;
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd");
-        bf.Serialize(file, SaveLoadGame.games);
+        bf.Serialize(file, SaveLoadGame.game);
         file.Close();
     }
 
@@ -21,7 +21,7 @@ public static class SaveLoadGame
         if(File.Exists(Application.persistentDataPath +"/savedGames.gd")){
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath +"/savedGames.gd", FileMode.Open);
-            SaveLoadGame.games = (List<Game>)bf.Deserialize(file);
+            SaveLoadGame.game = (Game)bf.Deserialize(file);
             file.Close();
         }
     }
