@@ -85,4 +85,22 @@ public static BaseCharacter Instance;
         happiness=happiness-amount;
         //TODO: Change sprite when happiness changes
     }
+
+    public Sprite geAvatar(){
+        return avatar;
+    }
+    public string getName(){
+        return nickName;
+    }
+
+    public float getMoney(){
+        return money;
+    }
+    public float getHappiness(){
+        return happiness;
+    }
+
+    public float getEnergy(){
+        return energy;
+    
 }
