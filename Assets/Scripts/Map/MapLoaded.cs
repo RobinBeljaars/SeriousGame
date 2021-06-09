@@ -18,6 +18,11 @@ public class MapLoaded : MonoBehaviour
     public Education[] educations;
 
     private float prevMoney = 0.0f;
+    void Start() {
+        if(Game.currentGame == null){
+            Game.currentGame = new Game();
+        }
+    }
     void Update()
     {
         UpdateAvatar();
