@@ -12,6 +12,7 @@ public class MapLoaded : MonoBehaviour
     public Text EducationText;
     public Text moneyText;
     public Text energyText;
+    public Text nameText;
 
     [Header("Parameters")]
     public Mood[] moods;
@@ -21,21 +22,25 @@ public class MapLoaded : MonoBehaviour
     void Start() {
         if(Game.currentGame == null){
             Game.currentGame = new Game();
+            UpdateAvatar();
+            UpdateName();
         }
     }
     void Update()
     {
-        UpdateAvatar();
         UpdateAge();
         UpdateMood();
         UpdateEnergy();
         UpdateMoney();
     }
 
+    void UpdateName() {
+        nameText.text = Game.currentGame.PlayerData.getName();
+    }
+
     void UpdateAvatar()
     {
-        Sprite newImage = Game.currentGame.PlayerData.getAvatar();
-        if (newImage != null)
+        if (Game.currentGame.PlayerData.getAvatar() != null)
         {
             imageAvatar.sprite = Game.currentGame.PlayerData.getAvatar();
         }
