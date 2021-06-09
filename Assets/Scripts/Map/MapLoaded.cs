@@ -28,6 +28,7 @@ public class MapLoaded : MonoBehaviour
         UpdateAvatar();
         UpdateAge();
         UpdateMood();
+        UpdateEnergy();
         UpdateMoney();
     }
 
