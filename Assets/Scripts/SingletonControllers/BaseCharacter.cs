@@ -3,25 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class BaseCharacter : MonoBehaviour
+public class BaseCharacter
 {
 
-// #region Singleton
-// public static BaseCharacter Instance;
-//     private void Awake()
-//     {
-//         if(Instance == null)
-//         {
-//             Instance = this;
-//             DontDestroyOnLoad(this);
-//         } 
-//         else if (Instance != this)
-//         {
-//             Destroy(this.gameObject);
-//         }
-//     }
-
-//     #endregion
 
     public int startingAge = 12;
     public float startingMoney = 100;
@@ -40,17 +24,12 @@ public class BaseCharacter : MonoBehaviour
     private float happiness;
 
     // Start is called before the first frame update
-    void Start()
+    public BaseCharacter()
     {
         age=startingAge;
         money = startingMoney;
         energy = startingEnergy;
         happiness = startingHappiness;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void IncrementAge(int amount){
