@@ -2,34 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class BaseCharacter : MonoBehaviour
 {
 
-#region Singleton
-public static BaseCharacter Instance;
-    private void Awake()
-    {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        } 
-        else if (Instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-    }
+// #region Singleton
+// public static BaseCharacter Instance;
+//     private void Awake()
+//     {
+//         if(Instance == null)
+//         {
+//             Instance = this;
+//             DontDestroyOnLoad(this);
+//         } 
+//         else if (Instance != this)
+//         {
+//             Destroy(this.gameObject);
+//         }
+//     }
 
-    #endregion
+//     #endregion
 
-    public int startingAge;
-    public float startingMoney;
-    public float startingEnergy;
-    public float startingHappiness;
-    public float reputation; //TODO, inmplement this
-    public float totalItemValue; //TODO, inmplement this
-    public bool hasSucceededHighSchool; //TODO, inmplement this
-    public bool hasSucceededCollege; //TODO, inmplement this
+    public int startingAge = 12;
+    public float startingMoney = 100;
+    public float startingEnergy = 100;
+    public float startingHappiness = 0;
+    public float reputation = 0; //TODO, inmplement this
+    public float totalItemValue = 0; //TODO, inmplement this
+    public bool hasSucceededHighSchool = true; //TODO, inmplement this
+    public bool hasSucceededCollege = false; //TODO, inmplement this
 
     private Sprite avatar;
     private string nickName;
@@ -50,6 +51,10 @@ public static BaseCharacter Instance;
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void IncrementAge(int amount){
+        this.age = age + amount;
     }
 
     public void SetCharacterNickName(string nickName){
@@ -86,8 +91,12 @@ public static BaseCharacter Instance;
         //TODO: Change sprite when happiness changes
     }
 
-    public Sprite geAvatar(){
+    public Sprite getAvatar(){
         return avatar;
+    }
+
+    public int GetAge(){
+        return age;
     }
     public string getName(){
         return nickName;

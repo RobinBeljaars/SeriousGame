@@ -54,8 +54,8 @@ public class CharacterCarousel : MonoBehaviour
     public bool SetCharacter(){
         if(characterName!=""){
             Debug.Log("Charachter can be set");
-        BaseCharacter.Instance.SetAvatar(avatarImage.GetComponent<Image>().sprite);
-        BaseCharacter.Instance.SetCharacterNickName(characterName);
+        Game.currentGame.PlayerData.SetAvatar(avatarImage.GetComponent<Image>().sprite);
+        Game.currentGame.PlayerData.SetCharacterNickName(characterName);
         return true;
         }
         error.text ="Kies eerst een bijnaam!";

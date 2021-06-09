@@ -23,7 +23,8 @@ public class Transition : MonoBehaviour
     }
 
     public void StartGame(){
-
+        // TODO move naar new Game button click
+        Game.currentGame = new Game();
 
         //We let CharacterCarousel decide if we can start a game or not.
         if(characterCarousel.SetCharacter()){
