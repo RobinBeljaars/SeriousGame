@@ -104,3 +104,4 @@ public static BaseCharacter Instance;
         return energy;
     
 }
+}
