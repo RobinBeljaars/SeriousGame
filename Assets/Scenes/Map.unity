@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 50319451}
   m_Layer: 5
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1417,6 +1417,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 250112200}
     m_Modifications:
+    - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: sceneName
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: UIToToggle.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: UIToToggle.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419492869461678280, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419492869461678280, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419492869461678280, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897987686396368627, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897987686396368627, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897987686396368627, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8414923725838610944, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: m_Name
       value: Room
@@ -1424,6 +1460,10 @@ PrefabInstance:
     - target: {fileID: 8414923725838610944, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414923725838610944, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8414923725838611007, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: m_Pivot.x
@@ -1509,6 +1549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: UIToToggle
+      value: 
+      objectReference: {fileID: 50319449}
     - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: UIToToggle.Array.data[0]
       value: 
@@ -1629,7 +1673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.2}
   m_AnchorMax: {x: 0.35, y: 0.8}
-  m_AnchoredPosition: {x: 0, y: -0.124996185}
+  m_AnchoredPosition: {x: 0, y: -0.12499237}
   m_SizeDelta: {x: 0, y: -0.75}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &910117585
@@ -1894,6 +1938,10 @@ PrefabInstance:
     - target: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Name
       value: Werken
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: sceneName
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
@@ -3082,6 +3130,10 @@ PrefabInstance:
       propertyPath: mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: UIToToggle
+      value: 
+      objectReference: {fileID: 770342286}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: UIToToggle.Array.size
       value: 2

@@ -13,6 +13,17 @@ public class NavigationScript : MonoBehaviour
     [Header("UI to toggle on/off on element click")]
     public GameObject[] UIToToggle;
 
+    void Start(){
+       if(UICache.GetLastMapSceneUI()!=null){
+            Debug.Log("Reloading with: "+UICache.GetLastMapSceneUI());
+            foreach (GameObject item in UIToToggle){
+                 if(!item.activeInHierarchy&&item.tag.Equals(UICache.GetLastMapSceneUI())){
+                        //Last active UI is not allready active AND the items equals or saved tag, we set it now
+                        SwitchScreen();
+                    }
+                 }
+            }
+    }
     void OnMouseUp()
     {
         
@@ -21,6 +32,8 @@ public class NavigationScript : MonoBehaviour
             AudioController.Instance.PlayButtonPressedSound();
             SwitchScreen();
     }
+
+
     
     }
     public void SwitchScreen(){
@@ -33,12 +46,20 @@ public class NavigationScript : MonoBehaviour
 
                 case NavigationMode.scene:
                 Debug.Log("Switching Scenes: "+sceneName);
+                   // UICache.setObjects(UIToToggle);
                     SceneManager.LoadScene(sceneName.ToString());
                     break;
                 case NavigationMode.ui:
                     foreach (GameObject item in UIToToggle)
                     {
-                        item.SetActive(!item.activeInHierarchy);
+                        if(!item.activeInHierarchy){
+                            Debug.Log("Switching to: "+item.tag);
+                            UICache.SetLastMapSceneUI(item.tag);
+                            item.SetActive(true);
+                        }else{
+                            item.SetActive(false);
+                        }
+                        
                     }
                     // UIToToggle.SetActive(!UIToToggle.activeInHierarchy);
                     break;

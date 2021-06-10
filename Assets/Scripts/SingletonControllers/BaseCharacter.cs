@@ -43,7 +43,6 @@ public class BaseCharacter
     }
 
     public void SetAvatar(Sprite avatar){
-        Debug.Log("SavingAvatarOfChoice");
         this.avatar=SpriteData.FromSprite(avatar);
     }
 
@@ -74,9 +73,8 @@ public class BaseCharacter
     }
 
     public Sprite getAvatar(){
-        Debug.Log(avatar.data);
-        Debug.Log("Getting Avatar");
-        return SpriteData.ToSprite(avatar);//avatar;
+
+        return SpriteData.ToSprite(avatar);
     }
 
     public int GetAge(){

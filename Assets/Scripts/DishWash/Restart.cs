@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+
+    public NavigationScript navigationScript;
+
+    public Text Wintext;
+
+    public float moneyReward;
+    public float energyCost;
     // Start is called before the first frame update
     void Start()
     {
-
+            Wintext.text="Gefeliciteerd, het aanrecht is weer schoon!\nJe hebt "+moneyReward+" euro gekregen van je ouders en de moeite heeft je "+energyCost+" energiepunten gekost.\nDruk op R om terug te gaan!";
+            Game.currentGame.PlayerData.IncrementMoney(moneyReward);
+            Game.currentGame.PlayerData.DecrementEnergy(energyCost);
     }
 
     // Update is called once per frame
@@ -16,10 +26,7 @@ public class Restart : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            //extra details
-            //Get paid 
-            //Ez money
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            navigationScript.SwitchScreen();
         }
     }
 }
