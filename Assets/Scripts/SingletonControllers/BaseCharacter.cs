@@ -16,7 +16,8 @@ public class BaseCharacter
     public bool hasSucceededHighSchool = true; //TODO, inmplement this
     public bool hasSucceededCollege = false; //TODO, inmplement this
 
-    private Sprite avatar;
+
+    private SpriteData avatar;
     private string nickName;
     private int age;
     private float money;
@@ -26,6 +27,7 @@ public class BaseCharacter
     // Start is called before the first frame update
     public BaseCharacter()
     {
+        Debug.Log("Calling BaseConst");
         age=startingAge;
         money = startingMoney;
         energy = startingEnergy;
@@ -41,7 +43,8 @@ public class BaseCharacter
     }
 
     public void SetAvatar(Sprite avatar){
-        this.avatar=avatar;
+        Debug.Log("SavingAvatarOfChoice");
+        this.avatar=SpriteData.FromSprite(avatar);
     }
 
     public void IncrementMoney(float amount){
@@ -71,13 +74,19 @@ public class BaseCharacter
     }
 
     public Sprite getAvatar(){
-        return avatar;
+        Debug.Log(avatar.data);
+        Debug.Log("Getting Avatar");
+        return SpriteData.ToSprite(avatar);//avatar;
     }
 
     public int GetAge(){
         return age;
     }
     public string getName(){
+
+        if(nickName==null){
+            return "";
+        }
         return nickName;
     }
 

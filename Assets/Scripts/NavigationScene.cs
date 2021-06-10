@@ -5,5 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public enum NavigateScene{
     Map,
-    SampleScene
+    SampleScene,
+    CharacterCreation,
+    MainMenu
 }

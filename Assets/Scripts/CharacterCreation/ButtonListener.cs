@@ -9,12 +9,17 @@ public class ButtonListener : MonoBehaviour
     public Button LeftButton;
     public Button RightButton;
 
+    public Button StartButton;
+
+    public NavigationScript navigationScript;
+
     public CharacterCarousel characterCarousel;
     // Start is called before the first frame update
     void Start()
     {
 		LeftButton.GetComponent<Button>().onClick.AddListener(ClickedLeft);
         RightButton.GetComponent<Button>().onClick.AddListener(ClickedRight);
+        StartButton.GetComponent<Button>().onClick.AddListener(ClickedStart);
     }
 
     // Update is called once per frame
@@ -31,5 +36,12 @@ public class ButtonListener : MonoBehaviour
     void ClickedRight(){
         AudioController.Instance.PlayButtonPressedSound();
         characterCarousel.MoveRight();
+    }
+
+    void ClickedStart(){
+        AudioController.Instance.PlayButtonPressedSound();
+         if(characterCarousel.SetCharacter()){
+            navigationScript.SwitchScreen();
+         }
     }
 }

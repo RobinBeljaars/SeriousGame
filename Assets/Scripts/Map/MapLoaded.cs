@@ -20,11 +20,14 @@ public class MapLoaded : MonoBehaviour
 
     private float prevMoney = 0.0f;
     void Start() {
+        Debug.Log("Starting map");
         if(Game.currentGame == null){
+            Debug.Log("New Game needs to be created");
             Game.currentGame = new Game();
+        }
             UpdateAvatar();
             UpdateName();
-        }
+            
     }
     void Update()
     {

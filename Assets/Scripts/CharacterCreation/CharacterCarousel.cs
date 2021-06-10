@@ -14,6 +14,11 @@ public class CharacterCarousel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //In case no game exist.
+        if(Game.currentGame==null){
+            Game.currentGame = new Game();
+        }  
+
         //Setting reference to image
         avatarImage = GameObject.Find ("AvatarImages");
         Debug.Log("Added sprites to list: "+sprites.Count);
@@ -46,7 +51,7 @@ public class CharacterCarousel : MonoBehaviour
         avatarImage.GetComponent<Image>().sprite = sprites[location]; 
     }
 
-    public void ReadStringInpunt(string characterName){
+    public void ReadStringInput(string characterName){
         this.characterName=characterName;
         Debug.Log("Text: "+characterName);
     }
@@ -56,6 +61,7 @@ public class CharacterCarousel : MonoBehaviour
             Debug.Log("Charachter can be set");
         Game.currentGame.PlayerData.SetAvatar(avatarImage.GetComponent<Image>().sprite);
         Game.currentGame.PlayerData.SetCharacterNickName(characterName);
+        SaveLoadGame.game=Game.currentGame;
         return true;
         }
         error.text ="Kies eerst een bijnaam!";
