@@ -15,15 +15,25 @@ public class NavigationScript : MonoBehaviour
 
     void OnMouseUp()
     {
+        
         Debug.Log("Test");
-        if (gameObject.CompareTag("SwitchScene"))
-        {
+        if (gameObject.CompareTag("SwitchScene")){
+            AudioController.Instance.PlayButtonPressedSound();
+            SwitchScreen();
+    }
+    
+    }
+    public void SwitchScreen(){
+        
+        
+            //At Every SceneChange we should autosave the game
+            SaveLoadGame.Save();
             switch (mode)
             {
 
                 case NavigationMode.scene:
-                    SceneManager.LoadScene((int) sceneName);
-                    Debug.Log("Switching Scenes");
+                Debug.Log("Switching Scenes: "+sceneName);
+                    SceneManager.LoadScene(sceneName.ToString());
                     break;
                 case NavigationMode.ui:
                     foreach (GameObject item in UIToToggle)
@@ -32,7 +42,7 @@ public class NavigationScript : MonoBehaviour
                     }
                     // UIToToggle.SetActive(!UIToToggle.activeInHierarchy);
                     break;
-            }
+            
         }
     }
 }
