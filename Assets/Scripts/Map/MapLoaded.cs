@@ -24,6 +24,8 @@ public class MapLoaded : MonoBehaviour
         if(Game.currentGame == null){
             Debug.Log("New Game needs to be created");
             Game.currentGame = new Game();
+            SaveLoadGame.Load();
+            Game.currentGame = SaveLoadGame.game;
         }
             UpdateAvatar();
             UpdateName();
