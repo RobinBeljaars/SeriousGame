@@ -14,6 +14,7 @@ public class MapLoaded : MonoBehaviour
     public Text energyText;
     public Text nameText;
 
+
     [Header("Parameters")]
     public Mood[] moods;
     public Education[] educations;
@@ -38,7 +39,8 @@ public class MapLoaded : MonoBehaviour
         UpdateEnergy();
         UpdateMoney();
     }
-
+  
+    
     void UpdateName() {
         nameText.text = Game.currentGame.PlayerData.getName();
     }
