@@ -47,7 +47,6 @@ public class SpongeController : MonoBehaviour
         if (other.transform.CompareTag("Stain"))
         {
             AudioController.Instance.PlaySpongePickedUp();
-            other.gameObject.SetActive(false);
             onPickUpCollision.Invoke();
         }
     }

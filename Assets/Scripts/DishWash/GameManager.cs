@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public Text countText;
     public GameObject winPanel;
     private int count;
-
+    public int max = 9;
     [Header("UI to toggle on/off on element click")]
     public float scoreMultiplier;
 
@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        max = 9;
         Physics.gravity = new Vector3(0, -100.0F, 0);
         count = 0;
         if(Game.currentGame==null){
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Schoongemaakt:\n" + count.ToString()+" / "+scoreToWin;
-        if (count >= scoreToWin)
+        if (count >= scoreToWin || count >= max)
         {
             winPanel.SetActive(true);
         }

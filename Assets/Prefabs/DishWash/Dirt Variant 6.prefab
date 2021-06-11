@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281105587023380321, guid: 48322e51e9dd8d34db217fb7a255765f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: -8.5
       objectReference: {fileID: 0}
     - target: {fileID: 2281105587023380321, guid: 48322e51e9dd8d34db217fb7a255765f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281105587023380321, guid: 48322e51e9dd8d34db217fb7a255765f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2281105587023380321, guid: 48322e51e9dd8d34db217fb7a255765f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2281105587023380333, guid: 48322e51e9dd8d34db217fb7a255765f, type: 3}
       propertyPath: m_Name
-      value: Dirt
+      value: Dirt Variant 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48322e51e9dd8d34db217fb7a255765f, type: 3}

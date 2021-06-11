@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 555337601106457300, guid: 2691a6ae784a8624abfc382e6ed19e9f, type: 3}
       propertyPath: m_Name
-      value: Dirt
+      value: Dirt Variant 5
       objectReference: {fileID: 0}
     - target: {fileID: 555337601106457304, guid: 2691a6ae784a8624abfc382e6ed19e9f, type: 3}
       propertyPath: m_RootOrder
@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 555337601106457304, guid: 2691a6ae784a8624abfc382e6ed19e9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 555337601106457304, guid: 2691a6ae784a8624abfc382e6ed19e9f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 555337601106457304, guid: 2691a6ae784a8624abfc382e6ed19e9f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 555337601106457304, guid: 2691a6ae784a8624abfc382e6ed19e9f, type: 3}
       propertyPath: m_LocalRotation.w
