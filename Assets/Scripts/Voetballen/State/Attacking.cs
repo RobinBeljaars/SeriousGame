@@ -54,7 +54,9 @@ public class Attacking : State<SoccerTeam>
         {     
             team.GetFSM().ChangeState(Defending.instance);
         }
-
+        if(SupportSpotCalc.instance == null){
+            Debug.Log("Yeet");
+        }
         SupportSpotCalc.instance.DetermineBestSupportingPosition(team.teamColor);
     }
 

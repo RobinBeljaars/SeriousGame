@@ -36,7 +36,7 @@ public class Wait : State<FieldPlayer>
         else
         {
             player.Steering().ArriveOff();
-            player.SetVelocity(new Vector3(0f,1f, 0f));
+            player.SetVelocity(new Vector3(0f,0f, 0f));
 
             player.TrackBall();
         }

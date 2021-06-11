@@ -19,7 +19,7 @@ public class GoalKeeper : FieldPlayer
     public Vector3 GetRearInterposeTarget()
     {
         float x = Team().HomeGoal().Center().x;
-        float z = 0f - 1 * .5f + (Ball().transform.position.z * 10f) / 20f;
+        float z = 0f - 1 * .257f + (Ball().transform.position.z * 10f) / 20f;
         return new Vector3(x, transform.position.y, z);
     }
 

@@ -54,7 +54,7 @@ public class ReceiveBall : State<FieldPlayer>
             player.Steering().ArriveOff();
             player.Steering().PursuitOff();
             player.TrackBall();
-            player.SetVelocity(Vector2.zero);
+            player.SetVelocity(Vector3.zero);
         }
     }
 

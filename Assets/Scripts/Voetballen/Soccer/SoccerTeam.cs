@@ -231,6 +231,7 @@ public class SoccerTeam : MonoBehaviour
                 if(fp.GetFSM() == null)
                 {
                     Debug.LogError("No FSM");
+                    Debug.Log(pb.ID().ToString());
                 }
 
                 if (fp.GetFSM().IsInstate(Wait.instance) || fp.GetFSM().IsInstate(ReturnToHomeRegion.instance))
@@ -297,7 +298,7 @@ public class SoccerTeam : MonoBehaviour
 public bool FindPass(PlayerBase passer, PlayerBase receiver, ref Vector3 passTarget, float power, float minPassingDistance)
     {
         float closestToGoalSoFar = Mathf.Infinity;
-        Vector3 target = new Vector3(0f,1f,0f);
+        Vector3 target = new Vector3(0f, 0f,0f);
 
         foreach(var item in players)
         {
@@ -391,8 +392,8 @@ public bool FindPass(PlayerBase passer, PlayerBase receiver, ref Vector3 passTar
         {
             shotTarget = opponentsGoal.Center();
             
-            int minZVal = (int)(opponentsGoal.RightPost().z + .5f);
-            int maxZVal = (int)(opponentsGoal.LeftPost().z - .5f);
+            int minZVal = (int)(opponentsGoal.RightPost().z + .257f);
+            int maxZVal = (int)(opponentsGoal.LeftPost().z - .257f);
 
             shotTarget.z = (float)UnityEngine.Random.Range(minZVal, maxZVal);
            

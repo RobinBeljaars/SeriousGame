@@ -61,7 +61,7 @@ public class SupportSpotCalc : MonoBehaviour
                 if (teamName.GetComponent<SoccerTeam>().SupportingPlayer())
                 {
                     const float optimalDistance = 5f;
-                    float dist = Vector2.Distance(teamName.GetComponent<SoccerTeam>().ControllingPlayer().transform.position, item.transform.position);
+                    float dist = Vector3.Distance(teamName.GetComponent<SoccerTeam>().ControllingPlayer().transform.position, item.transform.position);
                     float temp = Mathf.Abs(optimalDistance - dist);
 
                     if(temp< optimalDistance){

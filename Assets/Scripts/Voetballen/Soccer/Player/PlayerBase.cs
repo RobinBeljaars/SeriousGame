@@ -9,7 +9,7 @@ public class PlayerBase : MovingEntity_CH4
     public Vector3 myMaxForce = new Vector3(10f, 0 , 10f);
     [SerializeField]
     private string playerRole;
-    public Vector2 homeRegion;
+    public Vector3 homeRegion;
     [SerializeField]
     private Steering_CH4 steering;
     [SerializeField]

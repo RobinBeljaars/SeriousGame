@@ -164,7 +164,7 @@ public class Steering_CH4 : MonoBehaviour
 
     public Vector3 Calculate()
     {
-        steeringForce = new Vector3(0f, 1f, 0f);
+        steeringForce = new Vector3(0f, 0f, 0f);
 
         steeringForce = SumForces();
 
@@ -177,7 +177,7 @@ public class Steering_CH4 : MonoBehaviour
 
      Vector3 SumForces()
     {
-        Vector3 force = new Vector3(0f,1f, 0f);
+        Vector3 force = new Vector3(0f,0f, 0f);
         FindNeighbours();
      
         if (On( behavior_type.separation))
