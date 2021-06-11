@@ -26,6 +26,7 @@ public class SleepScript : MonoBehaviour {
             if(current.PlayerData.GetAge()>=maxAge){
                 //Player has gotten to old to keep playing, we should now end the game
                 //Switch screen to Highscore
+                Game.currentGame.EndGame();
                 current.PlayerData.IncrementAge(1);
                 navigationScript.SwitchScreen();
             }

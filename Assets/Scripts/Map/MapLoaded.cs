@@ -20,15 +20,16 @@ public class MapLoaded : MonoBehaviour
 
     [Header("Parameters")]
     public Mood[] moods;
-    public List<Education> educations;
+    public Education[] educations;
 
     void Start() {
         Debug.Log("Starting map");
         if(Game.currentGame == null){
-            Debug.Log("New Game needs to be created");
+            Debug.Log("For testing only");
             Game.currentGame = new Game();
             SaveLoadGame.Load();
             Game.currentGame = SaveLoadGame.game;
+            Game.currentGame.StartGame();
         }
             UpdateAvatar();
             UpdateName();
@@ -69,7 +70,6 @@ public class MapLoaded : MonoBehaviour
     void UpdateMood()
     {
         float happinessValue = Game.currentGame.PlayerData.getHappiness();
-        Debug.Log(Game.currentGame.PlayerData.getHappiness());
         foreach (Mood item in moods)
         {
             if (happinessValue >= item.happinessMinValue && happinessValue <= item.happinessMaxValue)

@@ -16,6 +16,7 @@ public class ScoreTitle : MonoBehaviour
         " is "+
         playerdata.GetAge().ToString()+
         " geworden en heeft de volgende score behaald:";
+
     }
 
     // Update is called once per frame

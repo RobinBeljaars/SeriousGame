@@ -47,6 +47,7 @@ public class ScoreDisplay : MonoBehaviour
         "\n\n"+
         score;
 
+        
     }
 
     // Update is called once per frame

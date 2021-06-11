@@ -28,7 +28,14 @@ public class ResumeButton : MonoBehaviour
         AudioController.Instance.PlayButtonPressedSound();
         SaveLoadGame.Load();
         Game.currentGame = SaveLoadGame.game;
-        navigationScript.SwitchScreen();
+        if(Game.currentGame.GetGameStatus()!=GameState.Started){
+            //Only actually started that have not been ended can be loaded
+            AudioController.Instance.PlayImpossibleChoice();
+        }
+        else{
+            
+            navigationScript.SwitchScreen();
+        }
     }
   
 }

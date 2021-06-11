@@ -27,12 +27,6 @@ public class BackButton : MonoBehaviour
     void clickedBack(){
         AudioController.Instance.PlayButtonPressedSound();
         
-        //Creating New Game class, to delete old files
-        Game.currentGame = new Game();
-        SaveLoadGame.game = Game.currentGame;
-        //Creating a new empty savefile to remove the old save
-        SaveLoadGame.Save();
-
         navigationScript.SwitchScreen();
     }
 
