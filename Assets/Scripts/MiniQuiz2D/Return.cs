@@ -11,10 +11,11 @@ public class Return : MonoBehaviour
 
     public Button nextButton;
 
-    public float moodReward;
+    public float educationReward;
     public float energyCost;
 
-    public float educationReward;
+    public float repCost;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,8 @@ public class Return : MonoBehaviour
     void ClickedNext()
     {
             Game.currentGame.PlayerData.DecrementEnergy(energyCost);
-            Game.currentGame.PlayerData.IncrementHappiness(moodReward);
+            Game.currentGame.PlayerData.DecrementReputationn(repCost);
+            Game.currentGame.PlayerData.IncrementEducation(educationReward);
             navigationScript.SwitchScreen();
     }
 }

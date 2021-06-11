@@ -30,7 +30,8 @@ public class SpriteData
 	}
 
 	public static Sprite ToSprite(SpriteData data)
-	{
+	{	
+		if(data!=null){
 		Rect rect = new Rect();
 		rect.xMin = data.xMin;
 		rect.xMax = data.xMax;
@@ -48,5 +49,8 @@ public class SpriteData
 		result.name = data.name;
 
 		return result;
+		
 	}
+	return null;
+}
 }
