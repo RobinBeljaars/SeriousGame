@@ -2,17 +2,17 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class StateMachine<Entity_Type> 
+public class StateMachine <T> 
 {
-   Entity_Type m_pOwner;
+   T m_pOwner;
 
-    State<Entity_Type> m_pCurrentState;
+    State<T> m_pCurrentState;
 
-    State<Entity_Type> m_pPreviousState;
+    State<T> m_pPreviousState;
 
-    State<Entity_Type> m_pGlobalState;
+    State<T> m_pGlobalState;
 
-    public StateMachine(Entity_Type owner)
+    public StateMachine(T owner)
     {
         m_pOwner = owner;
         m_pCurrentState = null;
@@ -34,9 +34,9 @@ public class StateMachine<Entity_Type>
         return false;
     }
 
-    public void SetCurrentState(State<Entity_Type> s) { m_pCurrentState = s; }
-    public void SetGlobalState(State<Entity_Type> s) { m_pGlobalState = s; }
-    public void SetPreviousState(State<Entity_Type> s) { m_pPreviousState = s; }
+    public void SetCurrentState(State<T> s) { m_pCurrentState = s; }
+    public void SetGlobalState(State<T> s) { m_pGlobalState = s; }
+    public void SetPreviousState(State<T> s) { m_pPreviousState = s; }
 
     public void Updating()
     {
@@ -46,7 +46,7 @@ public class StateMachine<Entity_Type>
             m_pCurrentState.Execute(m_pOwner);
     }
 
-    public void ChangeState(State<Entity_Type> pNewState)
+    public void ChangeState(State<T> pNewState)
     {
         if (pNewState == null)
         {
@@ -67,20 +67,20 @@ public class StateMachine<Entity_Type>
         ChangeState(m_pPreviousState);
     }
 
-    State<Entity_Type> CurrentState()
+    State<T> CurrentState()
     {
         return m_pCurrentState;
     }
-    State<Entity_Type> GlobalState()
+    State<T> GlobalState()
     {
         return m_pGlobalState;
     }
-    State<Entity_Type> PreviousState()
+    State<T> PreviousState()
     {
         return m_pPreviousState;
     }
 
-    public bool IsInstate(State<Entity_Type> st){
+    public bool IsInstate(State<T> st){
         if (st == CurrentState()) return true;
         else return false;
     }
