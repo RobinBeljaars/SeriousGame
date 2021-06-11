@@ -28,6 +28,7 @@ public class AudioController : MonoBehaviour
     public AudioClip characterCreationMusic;
     public AudioClip buttonPressSound;
     public AudioClip spongePickedUp;
+    public AudioClip impossibleChoice;
 
     private bool isMusicPlaying;
 
@@ -73,5 +74,10 @@ public class AudioController : MonoBehaviour
     {
         Debug.Log("Play Audio");
         audioSource.PlayOneShot(spongePickedUp);
+    }
+
+    public void PlayImpossibleChoice()
+    {
+        audioSource.PlayOneShot(impossibleChoice);
     }
 }
