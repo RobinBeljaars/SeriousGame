@@ -9,5 +9,6 @@ public enum NavigateScene{
     CharacterCreation,
     MainMenu,
     MinigameQuiz,
-    DishWash
+    DishWash,
+    Score
 }

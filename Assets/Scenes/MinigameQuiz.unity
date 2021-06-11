@@ -2175,9 +2175,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navigationScript: {fileID: 1758750603}
   nextButton: {fileID: 1758750600}
-  moodReward: 3
-  energyCost: 2
-  educationReward: 5
+  educationReward: 7
+  energyCost: 3
+  repCost: 1
 --- !u!1 &1768094592
 GameObject:
   m_ObjectHideFlags: 0

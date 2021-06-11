@@ -10,8 +10,9 @@ public class BaseCharacter
     public int startingAge = 12;
     public float startingMoney = 100;
     public float startingEnergy = 100;
-    public float startingHappiness = 0;
-    public float reputation = 0; //TODO, inmplement this
+    public float startingHappiness = 50;
+    public float startingReputation = 0; 
+    public float startingEducation = 0; 
     public float totalItemValue = 0; //TODO, inmplement this
     public bool hasSucceededHighSchool = true; //TODO, inmplement this
     public bool hasSucceededCollege = false; //TODO, inmplement this
@@ -23,7 +24,9 @@ public class BaseCharacter
     private float money;
     private float energy;
     private float happiness;
+    private float education;
 
+    private float reputation;
     // Start is called before the first frame update
     public BaseCharacter()
     {
@@ -32,6 +35,8 @@ public class BaseCharacter
         money = startingMoney;
         energy = startingEnergy;
         happiness = startingHappiness;
+        reputation = startingReputation; 
+        education = startingEducation;
     }
 
     public void IncrementAge(int amount){
@@ -74,13 +79,24 @@ public class BaseCharacter
     }
 
     public void IncrementHappiness(float amount){
-        happiness=happiness+amount;
+        float newHappiness = happiness+amount;
+        if(newHappiness>100){
+            happiness=100;
+        }else
+        {
+            happiness=newHappiness;
+        }
         //TODO: Change sprite when happiness changes
     }
 
     public void DecrementHappiness(float amount){
-        happiness=happiness-amount;
-        //TODO: Change sprite when happiness changes
+       if(amount>happiness){
+           happiness=0;
+       }
+       else
+       {
+           happiness=happiness-amount;
+       }
     }
 
     public Sprite getAvatar(){
@@ -110,4 +126,35 @@ public class BaseCharacter
         return energy;
     
 }
+
+    public float GetReputation(){
+        return reputation;
+    }
+
+    public void IncrementReputationn(float amount){
+         reputation = reputation +amount;
+    }
+     public void DecrementReputationn(float amount){
+         reputation = reputation -amount;
+    }
+    public float GetEducation(){
+        return education;
+    }
+
+    public void IncrementEducation(float amount){
+         float newEducation = education +amount;
+         if(newEducation>100){
+             education=100;
+         }else
+         {
+             education = newEducation;
+         }
+    }
+     public void DecrementEducation(float amount){
+         if(amount>education){
+             education=0;
+         }else{
+             education = education-amount;
+         }
+    }
 }
