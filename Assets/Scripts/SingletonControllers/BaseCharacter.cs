@@ -55,11 +55,22 @@ public class BaseCharacter
     }
 
     public void IncrementEnergy(float amount){
-        energy=energy+amount;
+      
+            energy=energy+amount;
+        
     }
+     public void RestoreEnergy(){
+         energy=startingEnergy;
+     }
 
     public void DecrementEnergy(float amount){
-        energy=energy-amount;
+        if(amount>energy){
+            energy=0;
+        }
+        else
+        {
+            energy=energy-amount;
+        }
     }
 
     public void IncrementHappiness(float amount){
