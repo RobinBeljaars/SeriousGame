@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
-
+using UnityEngine.Events;
 public class questionHandler : MonoBehaviour
 {
+    public NavigationScript navigationScript;
     public GameObject correctAnswerScreen;
     public Text questionText;
     public Text answer1Text;
@@ -16,6 +18,7 @@ public class questionHandler : MonoBehaviour
     public Button answer2Btn;
     public Button answer3Btn;
     public Button answer4Btn;
+
     Dictionary<int, string> questions = new Dictionary<int, string>();
     Dictionary<int, string> answers = new Dictionary<int, string>();
     List<string> cities = new List<string>();
@@ -33,6 +36,7 @@ public class questionHandler : MonoBehaviour
 
         Button btn4 = answer4Btn.GetComponent<Button>();
         btn4.onClick.AddListener(TaskOnClickAnswer4);
+
         collectQuestions();
         collectAnswers();
         setQuestion();
@@ -41,7 +45,10 @@ public class questionHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            navigationScript.SwitchScreen();
+        }
     }
 
     void TaskOnClickAnswer1()
