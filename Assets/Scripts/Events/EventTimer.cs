@@ -29,23 +29,24 @@ public class EventTimer : MonoBehaviour
         else{
 
             setNewTimer();
+            //Check if a sceneario is currently active, we don't want event & scenario's  active at the same time..
+            if(!Game.currentGame.GetScenarioStatus()){
+                //Check if an event is allready taking place, if not we don't want a new one
+                if(!Game.currentGame.GetEventStatus()){
 
-            //Check if an event is allready taking place, if not we don't want a new one
-            if(!eventManager.window.activeInHierarchy){
+                    //Check if the maxium is reached or noet    
+                    if(maxEventsPerYear>Game.currentGame.PlayerData.GetEventsExperiencedThisDay()){
+                        //With 0 energy we don't want new events spawning
+                        if(Game.currentGame.PlayerData.getEnergy()!=0){
 
-            //Check if the maxium is reached or noet    
-            if(maxEventsPerYear>Game.currentGame.PlayerData.GetEventsExperiencedThisDay()){
-                    //With 0 energy we don't want new events spawning
-                    if(Game.currentGame.PlayerData.getEnergy()!=0){
-
-                        AudioController.Instance.PlayNotification();
-                        eventManager.GenerateEvent();
+                            AudioController.Instance.PlayNotification();
+                            eventManager.GenerateEvent();
+                        }
                     }
-                }
-            }  
+                }  
+            }
         }
     }
-
     private void setNewTimer(){
         timer = Random.Range(minSecondsBetweenEvents, maxSecondsBetweenEvents);
     }

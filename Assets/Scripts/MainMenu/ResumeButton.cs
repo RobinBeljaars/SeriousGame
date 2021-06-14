@@ -10,6 +10,7 @@ public class ResumeButton : MonoBehaviour
     public Button Resume;
 
     public NavigationScript navigationScript;
+    public Text error;
 
 
     // Start is called before the first frame update
@@ -25,12 +26,12 @@ public class ResumeButton : MonoBehaviour
     }
 
     void clickedResume(){
-        AudioController.Instance.PlayButtonPressedSound();
         SaveLoadGame.Load();
         Game.currentGame = SaveLoadGame.game;
         if(Game.currentGame.GetGameStatus()!=GameState.Started){
             //Only actually started that have not been ended can be loaded
             AudioController.Instance.PlayImpossibleChoice();
+            error.text="Geen opgeslagen spel gevonden";
         }
         else{
             

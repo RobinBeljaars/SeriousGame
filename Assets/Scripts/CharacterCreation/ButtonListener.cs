@@ -39,9 +39,15 @@ public class ButtonListener : MonoBehaviour
     }
 
     void ClickedStart(){
-        AudioController.Instance.PlayButtonPressedSound();
          if(characterCarousel.SetCharacter()){
             navigationScript.SwitchScreen();
+         } 
+         else{
+            AudioController.Instance.PlayImpossibleChoice();
          }
+    }
+
+    public void ReadEnergyInput(float value){
+        characterCarousel.UpdateEnergyChoice(value);
     }
 }

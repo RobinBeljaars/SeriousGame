@@ -38,7 +38,7 @@ public class ScoreDisplay : MonoBehaviour
         double score=Math.Round(playerdata.getMoney()+playerdata.getHappiness()+playerdata.GetEducation()+playerdata.GetReputation(),0);
 
         scoreText.text="€ "+
-        Math.Round(playerdata.getMoney(),2)+
+        Math.Round(playerdata.getMoney(),0)+
         ",-\n"+
         playerdata.GetReputation().ToString()+
         "\n"+

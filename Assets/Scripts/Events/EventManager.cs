@@ -61,6 +61,7 @@ public class EventManager : MonoBehaviour
 
     private void SetEventData(Event randomEvent)
     {
+        Game.currentGame.SetEventoActive();
         currentEventId = events.IndexOf(randomEvent);
         titleText.text = randomEvent.title;
         descText.text = randomEvent.desc;

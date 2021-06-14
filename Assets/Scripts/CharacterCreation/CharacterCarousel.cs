@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +8,11 @@ public class CharacterCarousel : MonoBehaviour
 {
     public List<Sprite> sprites;
     public Text error;
+    public Text energyValue;
+
     private GameObject avatarImage;
     private int location=0;
+    private float energyChoice =0;
 
     private string characterName="";
     // Start is called before the first frame update
@@ -25,6 +29,8 @@ public class CharacterCarousel : MonoBehaviour
 
 		//Setting the first images by default
 		avatarImage.GetComponent<Image>().sprite = sprites[location];
+
+  
     }
 
     // Update is called once per frame
@@ -53,20 +59,25 @@ public class CharacterCarousel : MonoBehaviour
 
     public void ReadStringInput(string characterName){
         this.characterName=characterName;
-        Debug.Log("Text: "+characterName);
     }
+
+    public void UpdateEnergyChoice(float amount){
+        energyChoice=(int)Math.Round(amount,0);
+        energyValue.text="Gewenste speelduur: "+energyChoice;
+    }
+    
 
     public bool SetCharacter(){
         if(characterName!=""){
-            Debug.Log("Charachter can be set");
-        Game.currentGame.PlayerData.SetAvatar(avatarImage.GetComponent<Image>().sprite);
-        Game.currentGame.PlayerData.SetCharacterNickName(characterName);
-        Game.currentGame.StartGame();
-        SaveLoadGame.game=Game.currentGame;
+            Game.currentGame.PlayerData.SetStartingEnergy(energyChoice);
+            Game.currentGame.PlayerData.SetAvatar(avatarImage.GetComponent<Image>().sprite);
+            Game.currentGame.PlayerData.SetCharacterNickName(characterName);
+            Game.currentGame.StartGame();
+            SaveLoadGame.game=Game.currentGame;
 
-        return true;
-        }
-        error.text ="Kies eerst een bijnaam!";
-        return false;
+            return true;
+            }
+            error.text ="Kies eerst een bijnaam!";
+            return false;
     }
 }

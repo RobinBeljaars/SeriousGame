@@ -25,7 +25,6 @@ public class NewGameButton : MonoBehaviour
     }
 
     void clickedNewGame(){
-        AudioController.Instance.PlayButtonPressedSound();
         
         //Creating New Game class
         Game.currentGame = new Game();

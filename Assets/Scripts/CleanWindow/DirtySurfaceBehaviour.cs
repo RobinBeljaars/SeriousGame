@@ -96,10 +96,10 @@ public class DirtySurfaceBehaviour : MonoBehaviour
         }
         if(clean/max>0.9){
             //We're done
-             navigationScript.SwitchScreen();
-             Game.currentGame.PlayerData.AlterMoney(9);
+            Game.currentGame.PlayerData.AlterMoney(9);
              Game.currentGame.PlayerData.AlterEnergy(-4);
              Game.currentGame.PlayerData.AlterHappiness(-2);
+             navigationScript.SwitchScreen();
         }
         return clean / max;
     }

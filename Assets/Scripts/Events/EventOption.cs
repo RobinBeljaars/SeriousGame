@@ -38,6 +38,7 @@ public class EventOption
         //Custom event
         Rewards.GainReward(customRewardType);
         Game.currentGame.PlayerData.IncrementEventsExperiencedThisDay();
+        Game.currentGame.SetEventNotActive();
         SaveLoadGame.Save();
 
 

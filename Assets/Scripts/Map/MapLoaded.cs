@@ -33,13 +33,8 @@ public class MapLoaded : MonoBehaviour
             Game.currentGame.StartGame();
         }
             UpdateAvatar();
-            UpdateName();
-
-            //Should mostly only show at first launch. Placeholder for now
-            if(Game.currentGame.PlayerData.GetAge()==12&&Game.currentGame.PlayerData.getEnergy()==100){
-                feedBack.text="Welkom! Klik op de iconen om een activiteit uit te voeren.\nElke activieit kost energie en als deze op is moet je slapen.\nSucces!";
-            }
-            
+            UpdateName(); 
+            Game.currentGame.SetEventNotActive(); 
     }
     void Update()
     {

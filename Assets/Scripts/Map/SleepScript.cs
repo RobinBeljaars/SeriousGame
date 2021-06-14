@@ -17,6 +17,10 @@ public class SleepScript : MonoBehaviour {
     void OnMouseUp() {
 
         Game current = Game.currentGame;
+
+        if(current.GetScenarioStatus()){
+            return;
+        }
         //We should only allow sleep when someone is acutally tired
         if(current.PlayerData.getEnergy()>minEnergyBeforeYouCanSleep){
             AudioController.Instance.PlayImpossibleChoice();
@@ -32,7 +36,7 @@ public class SleepScript : MonoBehaviour {
                 feedBack.text=("Je stond in het rood... \nJe ouders hebben je geld geleend maar verwachten wel 10% rente van je...\nZorg dat je morgen weer in het groen staat!");
             }
 
-            AudioController.Instance.PlayButtonPressedSound();
+
             if(current.PlayerData.GetAge()>=maxAge){
                 //Player has gotten to old to keep playing, we should now end the game
                 //Switch screen to Highscore
@@ -42,6 +46,7 @@ public class SleepScript : MonoBehaviour {
             }
             else
             {
+                AudioController.Instance.PlayButtonPressedSound();
                 current.PlayerData.IncrementAge(1);
                 current.PlayerData.RestoreEnergy();
                 SaveLoadGame.Save();

@@ -25,7 +25,6 @@ public class BackButton : MonoBehaviour
     }
 
     void clickedBack(){
-        AudioController.Instance.PlayButtonPressedSound();
         
         navigationScript.SwitchScreen();
     }
