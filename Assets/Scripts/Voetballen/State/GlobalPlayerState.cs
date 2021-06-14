@@ -53,7 +53,7 @@ public class GlobalPlayerState : State<FieldPlayer>
                 {
                     FieldPlayer receiver = telegram.infos.gameObject.GetComponent<FieldPlayer>();
 
-                    if (player.Team().Receiver() != null && !player.BallWithKickingRange() || player.passLock())
+                    if (player.Team().Receiver() != null && !player.BallWithKickingRange() || (player.passLock() && player.Player))
                     {
                         return true;
                     } else if(player.Player && !player.passLock()){
