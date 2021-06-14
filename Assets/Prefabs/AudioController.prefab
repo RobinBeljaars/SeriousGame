@@ -49,6 +49,7 @@ MonoBehaviour:
   buttonPressSound: {fileID: 8300000, guid: 7caef1ddab08a844da3c6538155c93d0, type: 3}
   spongePickedUp: {fileID: 8300000, guid: 6b18480f260c69a4dbf7928f4be0ec7d, type: 3}
   impossibleChoice: {fileID: 8300000, guid: 1588c8e1e83d2dd4b92b26fbd0c129f9, type: 3}
+  notification: {fileID: 8300000, guid: e18be69a93aa2d9479ab1857f226c808, type: 3}
 --- !u!82 &-9052162884241794528
 AudioSource:
   m_ObjectHideFlags: 0

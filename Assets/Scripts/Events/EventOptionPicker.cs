@@ -8,6 +8,7 @@ public class EventOptionPicker : MonoBehaviour
 
     public void PickOption()
     {
+        AudioController.Instance.PlayButtonPressedSound();
         option.GainReward();
         GetComponent<ToolTipTrigger>().OnPointerExit(null);
         FindObjectOfType<EventManager>().EndEvent();

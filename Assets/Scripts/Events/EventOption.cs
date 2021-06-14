@@ -11,6 +11,7 @@ public class EventOption
     public float energyReward = 0;
     public float itemValueReward = 0;
     public float reputationReward = 0;
+    public float educationReward = 0;
     
     public Rewards.RewardType customRewardType = Rewards.RewardType.NONE;
 
@@ -31,7 +32,14 @@ public class EventOption
         if (reputationReward != 0)
             Rewards.SumReputation(reputationReward);
 
+        if (educationReward != 0)
+            Rewards.SumEducation(educationReward);
+
         //Custom event
         Rewards.GainReward(customRewardType);
+        Game.currentGame.PlayerData.IncrementEventsExperiencedThisDay();
+        SaveLoadGame.Save();
+
+
     }
 }

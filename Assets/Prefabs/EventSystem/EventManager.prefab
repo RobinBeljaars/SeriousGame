@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7361356214717762669}
   - component: {fileID: 7361356214717762668}
+  - component: {fileID: 4842660598323531261}
   m_Layer: 0
   m_Name: EventManager
   m_TagString: Untagged
@@ -54,67 +55,73 @@ MonoBehaviour:
     desc: Je krijgt de keuze om schoolspulletjes te kopen of een vet nieuw videospel
       die al je vrienden spelen.
     minAge: 12
-    maxAge: 17
+    maxAge: 16
     options:
     - title: Schoolspulletjes
-      moneyReward: -10
-      happinessReward: 0
+      moneyReward: -15
+      happinessReward: -2
       energyReward: 0
       itemValueReward: 0
-      reputationReward: 0
+      reputationReward: -10
+      educationReward: 2
       customRewardType: 0
     - title: Videospel
       moneyReward: -25
-      happinessReward: 0
+      happinessReward: 5
       energyReward: 0
       itemValueReward: 0
       reputationReward: 10
+      educationReward: -1
       customRewardType: 0
   - title: Karweitje
     desc: Je vader kwam langs en vroeg of je zijn auto wilt wassen voor 5 euro. Echter
       wilde je net gaan chillen met je vrienden.
     minAge: 12
-    maxAge: 17
+    maxAge: 16
     options:
     - title: Auto wassen
       moneyReward: 10
-      happinessReward: 0
+      happinessReward: -2
       energyReward: -5
       itemValueReward: 0
       reputationReward: 0
+      educationReward: 0
       customRewardType: 0
     - title: Chillen vrienden
-      moneyReward: 0
-      happinessReward: 0
-      energyReward: 0
+      moneyReward: -1
+      happinessReward: 2
+      energyReward: -3
       itemValueReward: 0
       reputationReward: 5
+      educationReward: 0
       customRewardType: 0
   - title: Pretpark
     desc: Je vrienden vragen of je naar de Efteling wilt echter moet je zelf de toegangsprijs
       betalen. Ga je mee?
-    minAge: 12
-    maxAge: 17
+    minAge: 14
+    maxAge: 19
     options:
     - title: Gaan
-      moneyReward: 75
-      happinessReward: 50
-      energyReward: 0
+      moneyReward: -50
+      happinessReward: 15
+      energyReward: -25
       itemValueReward: 0
-      reputationReward: 5
+      reputationReward: 15
+      educationReward: 0
       customRewardType: 0
     - title: Thuis blijven
       moneyReward: 0
-      happinessReward: 0
+      happinessReward: -10
       energyReward: 0
       itemValueReward: 0
-      reputationReward: 0
+      reputationReward: -7
+      educationReward: 0
       customRewardType: 0
   - title: Zwerver
     desc: Je loopt in de stad en komt een zwerver tegen. Hij vraagt om geld. Wat
       ga je geven?
-    minAge: 17
-    maxAge: 28
+    minAge: 13
+    maxAge: 19
     options:
     - title: 0,10 euro
       moneyReward: -0.1
@@ -122,6 +129,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0
+      educationReward: 0
       customRewardType: 0
     - title: 1 euro
       moneyReward: -1
@@ -129,6 +137,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0
+      educationReward: 0
       customRewardType: 0
     - title: 10 euro
       moneyReward: -10
@@ -136,6 +145,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0
+      educationReward: 0
       customRewardType: 0
     - title: 50 euro
       moneyReward: -50
@@ -143,6 +153,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0
+      educationReward: 0
       customRewardType: 0
     - title: Helemaal niets
       moneyReward: 0
@@ -150,12 +161,13 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0
+      educationReward: 0
       customRewardType: 0
   - title: Inzameling
     desc: Een stichting vraagt of je geld wilt doneren voor een goed doel, hoeveel
       geef jij?
-    minAge: 17
-    maxAge: 28
+    minAge: 13
+    maxAge: 19
     options:
     - title: 1 euro
       moneyReward: 1
@@ -163,6 +175,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0.1
+      educationReward: 0
       customRewardType: 0
     - title: 5 euro
       moneyReward: 5
@@ -170,6 +183,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0.5
+      educationReward: 0
       customRewardType: 0
     - title: 10 euro
       moneyReward: 10
@@ -177,6 +191,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 1
+      educationReward: 0
       customRewardType: 0
     - title: 50 euro
       moneyReward: 50
@@ -184,6 +199,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 5
+      educationReward: 0
       customRewardType: 0
     - title: 100 euro
       moneyReward: 100
@@ -191,6 +207,7 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: 10
+      educationReward: 0
       customRewardType: 0
     - title: Helemaal niets
       moneyReward: 0
@@ -198,4 +215,21 @@ MonoBehaviour:
       energyReward: 0
       itemValueReward: 0
       reputationReward: -5
+      educationReward: 0
       customRewardType: 0
+--- !u!114 &4842660598323531261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361356214717762666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb610bf7a6124e4ca22bddd1c2df5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEventsPerYear: 5
+  minSecondsBetweenEvents: 10
+  maxSecondsBetweenEvents: 30
+  eventManager: {fileID: 7361356214717762668}

@@ -12,9 +12,9 @@ public class ToolTipManager : MonoBehaviour
         current = this;
     }
 
-    public static void Show(string content, string header = "", float money = 0, float energy = 0, float happiness = 0, float itemValue = 0, float reputation = 0)
+    public static void Show(string content, string header = "", float money = 0, float energy = 0, float happiness = 0, float itemValue = 0, float reputation = 0,float education=0)
     {
-        current.toolTip.SetText(content, header, money, energy, happiness, itemValue, reputation);
+        current.toolTip.SetText(content, header, money, energy, happiness, itemValue, reputation,education);
         current.toolTip.gameObject.SetActive(true);
         LeanTween.alphaCanvas(current.toolTip.gameObject.GetComponent<CanvasGroup>(), 1, 0.2f);
     }

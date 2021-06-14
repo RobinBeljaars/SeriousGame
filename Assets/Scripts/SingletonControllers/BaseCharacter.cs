@@ -25,6 +25,7 @@ public class BaseCharacter
     private float energy;
     private float happiness;
     private float education;
+    private int eventsExperiencedThisDay =0;
 
     private float reputation;
     // Start is called before the first frame update
@@ -40,7 +41,8 @@ public class BaseCharacter
     }
 
     public void IncrementAge(int amount){
-        this.age = age + amount;
+        age = age + amount;
+        eventsExperiencedThisDay=0;
     }
 
     public void SetCharacterNickName(string nickName){
@@ -131,10 +133,10 @@ public class BaseCharacter
         return reputation;
     }
 
-    public void IncrementReputationn(float amount){
+    public void IncrementReputation(float amount){
          reputation = reputation +amount;
     }
-     public void DecrementReputationn(float amount){
+     public void DecrementReputation(float amount){
          reputation = reputation -amount;
     }
     public float GetEducation(){
@@ -156,5 +158,11 @@ public class BaseCharacter
          }else{
              education = education-amount;
          }
+    }
+    public void IncrementEventsExperiencedThisDay(){
+        eventsExperiencedThisDay++;
+    }
+    public int GetEventsExperiencedThisDay(){
+        return eventsExperiencedThisDay;
     }
 }

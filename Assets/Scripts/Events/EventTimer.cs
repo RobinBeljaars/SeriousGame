@@ -17,7 +17,7 @@ public class EventTimer : MonoBehaviour
 
     void Start()
     {
-        timer = minSecondsBetweenEvents;
+        setNewTimer();
     }
 
     // Update is called once per frame
@@ -27,9 +27,22 @@ public class EventTimer : MonoBehaviour
             timer = timer - Time.deltaTime;
         }
         else{
-            timer = 5;
-            eventManager.GenerateEvent();
-            
+
+            setNewTimer();
+
+            //Check if an event is allready taking place, if not we don't want a new one
+            if(!eventManager.window.activeInHierarchy){
+
+            //Check if the maxium is reached or noet    
+            if(maxEventsPerYear>Game.currentGame.PlayerData.GetEventsExperiencedThisDay()){
+                    AudioController.Instance.PlayNotification();
+                    eventManager.GenerateEvent();
+                }
+            }  
         }
+    }
+
+    private void setNewTimer(){
+        timer = Random.Range(minSecondsBetweenEvents, maxSecondsBetweenEvents);
     }
 }

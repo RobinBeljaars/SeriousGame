@@ -26,7 +26,7 @@ public class Return : MonoBehaviour
     void ClickedNext()
     {
             Game.currentGame.PlayerData.DecrementEnergy(energyCost);
-            Game.currentGame.PlayerData.DecrementReputationn(repCost);
+            Game.currentGame.PlayerData.DecrementReputation(repCost);
             Game.currentGame.PlayerData.IncrementEducation(educationReward);
             navigationScript.SwitchScreen();
     }

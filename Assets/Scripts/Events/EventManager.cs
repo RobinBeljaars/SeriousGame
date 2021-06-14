@@ -16,12 +16,16 @@ public class EventManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
-            GenerateEvent();
+    /*
+    //For debugging only
+       if (Input.GetKeyUp(KeyCode.Space))
+          GenerateEvent();
+     */
     }
 
     public void GenerateEvent(int id = -1)
     {
+        BaseCharacter playerData = Game.currentGame.PlayerData;
         if (id != -1)
         {
             SetEventData(events[id]);
@@ -36,7 +40,7 @@ public class EventManager : MonoBehaviour
             {
                 randomId = Random.Range(0, events.Count);
 
-                if (PlayerProperties.age >= events[randomId].minAge && PlayerProperties.age <= events[randomId].maxAge)
+                if (playerData.GetAge() >= events[randomId].minAge && playerData.GetAge() <= events[randomId].maxAge)
                     break;
 
                 healthCounter++;
@@ -103,6 +107,7 @@ public class EventManager : MonoBehaviour
             _optionObject.GetComponent<ToolTipTrigger>().happiness  = option.happinessReward;
             _optionObject.GetComponent<ToolTipTrigger>().itemValue  = option.itemValueReward;
             _optionObject.GetComponent<ToolTipTrigger>().reputation = option.reputationReward;
+            _optionObject.GetComponent<ToolTipTrigger>().education  = option.educationReward;
         }
     }
 
