@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     public Text redScore;
     public Text blueScore;
     private bool isScored;
+    public pauseGame pause;
 
     private void Start()
     {
@@ -21,11 +22,13 @@ public class ScoreManager : MonoBehaviour
             //lose condition
             Application.Quit();
             Debug.Log("lose");
+            pause.gameEnded = true;
         }
         else if (int.Parse(redScore.text) >= 5)
         {
             //win condition
-
+            pause.gameEnded = true;
+            pause.gameWon = true;
             Debug.Log("Win");
             Application.Quit();
         }

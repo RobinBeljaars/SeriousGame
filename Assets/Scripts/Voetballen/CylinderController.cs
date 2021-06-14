@@ -19,6 +19,9 @@ public class CylinderController : MonoBehaviour
 
     public void Move(Vector3 movement)
     {
+        if(!GameObject.Find("4").GetComponent<FieldPlayer>().isPaused()){
+
         rb.MovePosition(transform.position + movement * speed);
+        }
     }
 }

@@ -1621,6 +1621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
+  pause: {fileID: 0}
 --- !u!1 &441368831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6705,6 +6706,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1545746985}
   - component: {fileID: 1545746986}
+  - component: {fileID: 1545746987}
+  - component: {fileID: 1545746988}
   m_Layer: 0
   m_Name: PlayerInput
   m_TagString: Untagged
@@ -6740,6 +6743,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cylinderController: {fileID: 1682608652}
   player: {fileID: 1682608655}
+--- !u!114 &1545746987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545746984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0737e4610bcf684196fd03243b56c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEnded: 0
+  gameWon: 0
+  gamepaused: 0
+  happinessWinScore: 5
+  RepScore: 10
+  navigationScript: {fileID: 1545746988}
+  red: {fileID: 1672920638}
+  blue: {fileID: 746665119}
+--- !u!114 &1545746988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545746984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ca2d5f2ebd567429e40cb5978c3a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  sceneName: 0
+  UIToToggle: []
 --- !u!1 &1546120519
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,13 +7357,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682608649}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 96
+  m_Constraints: 100
   m_CollisionDetection: 0
 --- !u!114 &1682608654
 MonoBehaviour:
@@ -7517,6 +7555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
+  pause: {fileID: 0}
 --- !u!1 &1705997504
 GameObject:
   m_ObjectHideFlags: 0
