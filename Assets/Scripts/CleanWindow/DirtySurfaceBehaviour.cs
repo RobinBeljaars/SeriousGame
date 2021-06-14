@@ -97,6 +97,9 @@ public class DirtySurfaceBehaviour : MonoBehaviour
         if(clean==max){
             //We're done
              navigationScript.SwitchScreen();
+             Game.currentGame.PlayerData.AlterMoney(9);
+             Game.currentGame.PlayerData.AlterEnergy(-4);
+             Game.currentGame.PlayerData.AlterHappiness(-2);
         }
         return clean / max;
     }

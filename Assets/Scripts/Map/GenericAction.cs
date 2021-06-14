@@ -55,7 +55,7 @@ public class GenericAction : MonoBehaviour {
                 feedBack.text = feedbackString;
             }
             else{
-                feedBack.text="Je bent niet oud genoeg om dit te mogen...";
+                feedBack.text="Je bent niet oud genoeg om dit te mogen...\nJe kunt deze actie uit voeren vanaf "+minAge+" jaar..";
                 AudioController.Instance.PlayImpossibleChoice();
             }
             

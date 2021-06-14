@@ -1095,6 +1095,14 @@ PrefabInstance:
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: sceneName
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: UIToToggle
       value: 
       objectReference: {fileID: 50319449}
@@ -1439,7 +1447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: sceneName
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
