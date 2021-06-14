@@ -94,6 +94,9 @@ public class FieldPlayer : PlayerBase
         while (true)
         {
             CurStateForDebug();
+            if(Player){
+                transform.position = new Vector3(transform.position.x, 1f, transform.position.z);
+            }
             m_pStateMachine.Updating();
             yield return new WaitForSeconds(0.2f);
         }

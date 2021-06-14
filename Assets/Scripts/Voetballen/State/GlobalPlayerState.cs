@@ -40,6 +40,7 @@ public class GlobalPlayerState : State<FieldPlayer>
                 }
             case SoccerMessages.Msg_GoHome:
                 {
+                    player.Steering().SeekOff();
                     player.SetHomeRegion(player.transform.parent.GetComponent<SoccerTeam>().initialRegion[int.Parse(player.transform.name) - 1]);
                     player.GetFSM().ChangeState(ReturnToHomeRegion.instance);
                     return true;
