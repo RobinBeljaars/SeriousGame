@@ -94,7 +94,7 @@ public class DirtySurfaceBehaviour : MonoBehaviour
                 }
             }
         }
-        if(clean==max){
+        if(clean/max>0.9){
             //We're done
              navigationScript.SwitchScreen();
              Game.currentGame.PlayerData.AlterMoney(9);
