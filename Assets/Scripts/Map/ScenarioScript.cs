@@ -203,6 +203,7 @@ public class ScenarioScript : MonoBehaviour
 
     void continueScenario()
     {
+        AudioController.Instance.PlayButtonPressedSound();
         scenarioTextBox.text = scenarios[Game.currentGame.scenariosCount];
         Debug.Log(Game.currentGame.scenariosCount);
 
