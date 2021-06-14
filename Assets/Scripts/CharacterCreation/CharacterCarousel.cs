@@ -69,6 +69,9 @@ public class CharacterCarousel : MonoBehaviour
 
     public bool SetCharacter(){
         if(characterName!=""){
+            if(energyChoice==0){
+                energyChoice=100;
+            }
             Game.currentGame.PlayerData.SetStartingEnergy(energyChoice);
             Game.currentGame.PlayerData.SetAvatar(avatarImage.GetComponent<Image>().sprite);
             Game.currentGame.PlayerData.SetCharacterNickName(characterName);
