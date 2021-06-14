@@ -33,7 +33,7 @@ public class NewGameButton : MonoBehaviour
 
         //Creating a new empty savefile to prevent potentiel errors further along
         SaveLoadGame.Save();
-        UICache.SetLastMapSceneUI("Map");
+
         
         navigationScript.SwitchScreen();
     }

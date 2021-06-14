@@ -7,8 +7,5 @@ public enum NavigateScene{
     Map,
     SampleScene,
     CharacterCreation,
-    MainMenu,
-    MinigameQuiz,
-    DishWash,
-    Score
+    MainMenu
 }

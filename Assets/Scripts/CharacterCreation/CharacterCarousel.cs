@@ -61,9 +61,7 @@ public class CharacterCarousel : MonoBehaviour
             Debug.Log("Charachter can be set");
         Game.currentGame.PlayerData.SetAvatar(avatarImage.GetComponent<Image>().sprite);
         Game.currentGame.PlayerData.SetCharacterNickName(characterName);
-        Game.currentGame.StartGame();
         SaveLoadGame.game=Game.currentGame;
-
         return true;
         }
         error.text ="Kies eerst een bijnaam!";
