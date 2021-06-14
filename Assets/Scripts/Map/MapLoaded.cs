@@ -9,26 +9,35 @@ public class MapLoaded : MonoBehaviour
     public Image imageAvatar;
     public Text ageText;
     public Text moodText;
-    public Text EducationText;
+    public Text educationText;
     public Text moneyText;
     public Text energyText;
     public Text nameText;
+    public Text reputationText;
+
+    public Text feedBack;
+
 
     [Header("Parameters")]
     public Mood[] moods;
     public Education[] educations;
 
-    private float prevMoney = 0.0f;
     void Start() {
         Debug.Log("Starting map");
         if(Game.currentGame == null){
-            Debug.Log("New Game needs to be created");
+            Debug.Log("For testing only");
             Game.currentGame = new Game();
             SaveLoadGame.Load();
             Game.currentGame = SaveLoadGame.game;
+            Game.currentGame.StartGame();
         }
             UpdateAvatar();
             UpdateName();
+
+            //Should mostly only show at first launch. Placeholder for now
+            if(Game.currentGame.PlayerData.GetAge()==12&&Game.currentGame.PlayerData.getEnergy()==100){
+                feedBack.text="Welkom! Klik op de iconen om een activiteit uit te voeren.\nElke activieit kost energie en als deze op is moet je slapen.\nSucces!";
+            }
             
     }
     void Update()
@@ -37,8 +46,11 @@ public class MapLoaded : MonoBehaviour
         UpdateMood();
         UpdateEnergy();
         UpdateMoney();
+        UpdateReputation();
+        UpdateEductation();
     }
-
+  
+    
     void UpdateName() {
         nameText.text = Game.currentGame.PlayerData.getName();
     }
@@ -62,7 +74,7 @@ public class MapLoaded : MonoBehaviour
         {
             if (happinessValue >= item.happinessMinValue && happinessValue <= item.happinessMaxValue)
             {
-                moodText.text = item.mood;
+                moodText.text = item.mood+" ("+happinessValue.ToString()+")";
                 moodText.color = item.colour;
             }
         }
@@ -72,15 +84,15 @@ public class MapLoaded : MonoBehaviour
     {
         float moneyValue = Game.currentGame.PlayerData.getMoney();
         moneyText.text = "€ " + moneyValue.ToString();
-        if (moneyValue >= prevMoney)
+        if (moneyValue >= 0)
         {
-            moneyText.color = Color.green;
+            moneyText.color = new Color(0,166f/255f,3f/255f,1);
         }
-        else if (moneyValue < prevMoney)
+        else if (moneyValue <0)
         {
-            moneyText.color = Color.red;
+            moneyText.color = new Color(180f/255f,0,0,1);
         }
-        prevMoney = moneyValue;
+
     }
 
     void UpdateEnergy()
@@ -90,14 +102,20 @@ public class MapLoaded : MonoBehaviour
 
     void UpdateEductation()
     {
-        float education = 0;
-        foreach (Education item in educations)
+        float educationValue = Game.currentGame.PlayerData.GetEducation();
+       foreach (Education item in educations)
         {
-            if (education >= item.educationMinValue && education <= item.educationMaxValue)
+            
+            if (educationValue >= item.educationMinValue && educationValue <= item.educationMaxValue)
             {
-                moodText.text = item.Grade;
-                moodText.color = item.colour;
+                educationText.text = item.Grade+" ("+educationValue.ToString()+")";
+                educationText.color = item.colour;
             }
         }
     }
+    
+    void UpdateReputation(){
+        reputationText.text = Game.currentGame.PlayerData.GetReputation().ToString();
+    }
+
 }

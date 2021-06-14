@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - SwitchScene
+  - Stain
+  - Room
+  - Map
   layers:
   - Default
   - TransparentFX
