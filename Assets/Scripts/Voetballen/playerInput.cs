@@ -6,6 +6,7 @@ public class playerInput : MonoBehaviour
 {
     public CylinderController cylinderController;
     public FieldPlayer player;
+    public pauseGame pause;
 
     private void Update()
     {
@@ -15,10 +16,12 @@ public class playerInput : MonoBehaviour
             var team = GameObject.Find("RedTeam").GetComponent<SoccerTeam>();
             team.Reload();
             team.opponentTeam.Reload();
+        } else if(Input.GetKeyUp(KeyCode.Escape)){
+            pause.Pause();
         }
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        Vector3 movement = new Vector3(moveHorizontal, player.transform.position.y, moveVertical);
 
         cylinderController.Move(movement * Time.deltaTime);
     }

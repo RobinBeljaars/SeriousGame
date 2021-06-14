@@ -77,6 +77,16 @@ public class SoccerTeam : MonoBehaviour
         StartCoroutine(UpdateTeamState());
     }
 
+    public void pause(bool value){
+        foreach(var player in players){
+            if(value){
+            player.GetComponent<FieldPlayer>().Pause();
+            } else{
+                player.GetComponent<FieldPlayer>().resume();
+            }
+        }
+    }
+
     void CheckItIsOurTeam()
     {
         if (controllingPlayer != null)

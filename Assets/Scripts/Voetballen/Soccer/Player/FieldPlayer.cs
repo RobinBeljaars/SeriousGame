@@ -13,6 +13,8 @@ public class FieldPlayer : PlayerBase
     public bool Player;
 
     private bool PassLock;
+    
+    private bool pause = false;
     void Start()
     {
         PassLock = Player;
@@ -31,6 +33,18 @@ public class FieldPlayer : PlayerBase
     public new bool HandleMessage(Telegram_CH4 msg)
     {
         return m_pStateMachine.HandleMessage(msg);
+    }
+
+    public void Pause(){
+        pause = true;
+    }
+
+    public bool isPaused(){
+        return pause;
+    }
+
+    public void resume(){
+        pause = false;
     }
 
     public void CurStateForDebug()
@@ -77,12 +91,14 @@ public class FieldPlayer : PlayerBase
     {
         while (true)
         {
-            if(!Player){
-                Vector3 desiredVelocity = Steering().Calculate() / 70f;
-                transform.position = (Vector3)transform.position + desiredVelocity;
-            } else if(state == "ReturnToHomeRegion"){
-                Vector3 desiredVelocity = Steering().Calculate() / 70f;
-                transform.position = (Vector3)transform.position + desiredVelocity;
+            if(!pause){
+                if(!Player){
+                    Vector3 desiredVelocity = Steering().Calculate() / 70f;
+                    transform.position = (Vector3)transform.position + desiredVelocity;
+                } else if(state == "ReturnToHomeRegion"){
+                    Vector3 desiredVelocity = Steering().Calculate() / 70f;
+                    transform.position = (Vector3)transform.position + desiredVelocity;
+                }
             }
             yield return new WaitForSeconds(0.05f);
         }
@@ -94,6 +110,9 @@ public class FieldPlayer : PlayerBase
         while (true)
         {
             CurStateForDebug();
+            if(Player){
+                transform.position = new Vector3(transform.position.x, 1f, transform.position.z);
+            }
             m_pStateMachine.Updating();
             yield return new WaitForSeconds(0.2f);
         }

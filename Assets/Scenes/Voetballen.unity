@@ -1621,6 +1621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
+  pause: {fileID: 0}
 --- !u!1 &441368831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,7 +2004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484139632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 1, z: -4}
+  m_LocalPosition: {x: -5, y: 1, z: -5.5}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1672920637}
@@ -2049,7 +2050,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2d5362cb944fa54a8fbba89cd3710b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2698,7 +2699,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f31ea2b22e7a8244d943e02fd90cef63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3072,7 +3073,7 @@ MonoBehaviour:
   Spot_CanScoreStrength: 1
   Spot_DistFromControllingPlayerStrength: 2
   NumAttemptsToFindValidStrike: 5
-  PlayerKickFrequency: 9
+  PlayerKickFrequency: 1
   ChanceOfUsingArriveTypeReceiveBehavior: 0.5
   ChancePlayerAttemptsPotShot: 0.1
   BallWithinReceivingRange: 3
@@ -3169,7 +3170,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2d5362cb944fa54a8fbba89cd3710b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4049,7 +4050,6 @@ GameObject:
   - component: {fileID: 970854035}
   - component: {fileID: 970854038}
   - component: {fileID: 970854037}
-  - component: {fileID: 970854036}
   - component: {fileID: 970854039}
   m_Layer: 0
   m_Name: Cylinder (1)
@@ -4072,20 +4072,6 @@ Transform:
   m_Father: {fileID: 337807943}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &970854036
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970854034}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &970854037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4504,7 +4490,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d02674ab2f12f464895a23907e7a5ca0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6720,6 +6706,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1545746985}
   - component: {fileID: 1545746986}
+  - component: {fileID: 1545746987}
+  - component: {fileID: 1545746988}
   m_Layer: 0
   m_Name: PlayerInput
   m_TagString: Untagged
@@ -6755,6 +6743,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cylinderController: {fileID: 1682608652}
   player: {fileID: 1682608655}
+  pause: {fileID: 1545746987}
+--- !u!114 &1545746987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545746984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0737e4610bcf684196fd03243b56c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEnded: 0
+  gameWon: 0
+  gamepaused: 0
+  happinessWinScore: 5
+  RepScore: 10
+  navigationScript: {fileID: 1545746988}
+  red: {fileID: 1672920638}
+  blue: {fileID: 746665119}
+--- !u!114 &1545746988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545746984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ca2d5f2ebd567429e40cb5978c3a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  sceneName: 0
+  UIToToggle: []
 --- !u!1 &1546120519
 GameObject:
   m_ObjectHideFlags: 0
@@ -7238,6 +7262,7 @@ GameObject:
   - component: {fileID: 1682608651}
   - component: {fileID: 1682608652}
   - component: {fileID: 1682608653}
+  - component: {fileID: 1682608657}
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
@@ -7334,13 +7359,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682608649}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 100
   m_CollisionDetection: 0
 --- !u!114 &1682608654
 MonoBehaviour:
@@ -7422,6 +7447,18 @@ MonoBehaviour:
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
   distToBall: 0
+--- !u!114 &1682608657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682608649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af10a2016235a484eb320f7ae82a265b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692150059
 GameObject:
   m_ObjectHideFlags: 0
@@ -7532,6 +7569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
+  pause: {fileID: 0}
 --- !u!1 &1705997504
 GameObject:
   m_ObjectHideFlags: 0
@@ -7821,7 +7859,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f31ea2b22e7a8244d943e02fd90cef63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8721,7 +8759,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d02674ab2f12f464895a23907e7a5ca0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9009,8 +9047,6 @@ GameObject:
   - component: {fileID: 2080208414}
   - component: {fileID: 2080208417}
   - component: {fileID: 2080208416}
-  - component: {fileID: 2080208415}
-  - component: {fileID: 2080208418}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -9032,20 +9068,6 @@ Transform:
   m_Father: {fileID: 337807943}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2080208415
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080208413}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &2080208416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9095,17 +9117,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080208413}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!210 &2080208418
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080208413}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
 --- !u!1 &2110717151
 GameObject:
   m_ObjectHideFlags: 0

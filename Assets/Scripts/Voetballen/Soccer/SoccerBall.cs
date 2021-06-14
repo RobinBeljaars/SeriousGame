@@ -24,7 +24,9 @@ public class SoccerBall : MovingEntity_CH4
         oldPos = Vector3.zero;
         velocity = Vector3.zero;
         owner = null;
-        transform.position = new Vector3(0, 1, 0);
+        Vector3 loc = Vector3.zero;
+        loc.y = 1;
+        transform.position = loc;
     }
 
     public float Speed()
@@ -55,7 +57,6 @@ public class SoccerBall : MovingEntity_CH4
 
             v_heading = velocity.normalized;
 
-            // 경기장 밖으로 나간경우 속도 0으로 지정
             if (transform.position.x < -24 || transform.position.x > 24 || transform.position.z > 10 || transform.position.z < -10)
             {
                 velocity = new Vector3(0, 0, 0);
