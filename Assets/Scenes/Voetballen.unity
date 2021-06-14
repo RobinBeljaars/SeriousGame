@@ -2050,7 +2050,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2d5362cb944fa54a8fbba89cd3710b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2699,7 +2699,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f31ea2b22e7a8244d943e02fd90cef63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3170,7 +3170,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2d5362cb944fa54a8fbba89cd3710b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4490,7 +4490,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d02674ab2f12f464895a23907e7a5ca0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6743,6 +6743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cylinderController: {fileID: 1682608652}
   player: {fileID: 1682608655}
+  pause: {fileID: 1545746987}
 --- !u!114 &1545746987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7261,6 +7262,7 @@ GameObject:
   - component: {fileID: 1682608651}
   - component: {fileID: 1682608652}
   - component: {fileID: 1682608653}
+  - component: {fileID: 1682608657}
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
@@ -7445,6 +7447,18 @@ MonoBehaviour:
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
   distToBall: 0
+--- !u!114 &1682608657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682608649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af10a2016235a484eb320f7ae82a265b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692150059
 GameObject:
   m_ObjectHideFlags: 0
@@ -7845,7 +7859,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f31ea2b22e7a8244d943e02fd90cef63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8745,7 +8759,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 090e0e5d92f743e41865be65c38fd8c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d02674ab2f12f464895a23907e7a5ca0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
