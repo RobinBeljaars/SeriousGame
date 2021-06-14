@@ -21,12 +21,4 @@ public class CylinderController : MonoBehaviour
     {
         rb.MovePosition(transform.position + movement * speed);
     }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Ball")) {
-            other.gameObject.SetActive(false);
-            onPickUpCollision.Invoke();
-        }
-    }
 }
