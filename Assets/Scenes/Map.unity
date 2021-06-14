@@ -1526,6 +1526,7 @@ MonoBehaviour:
   minEnergyBeforeYouCanSleep: 20
   feedBack: {fileID: 33885628}
   navigationScript: {fileID: 1137656387}
+  interestPercentrage: 10
 --- !u!114 &1137656387 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1211299690130267761, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
