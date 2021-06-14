@@ -29,7 +29,7 @@ public class LeaveScript : MonoBehaviour {
             //Player meets the requirments to leave
             AudioController.Instance.PlayButtonPressedSound();
                 
-                navigationScript.SwitchScreen();
+             //TODO   navigationScript.SwitchScreen();
             }
     }
 }
