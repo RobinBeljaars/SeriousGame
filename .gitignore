@@ -10,6 +10,8 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+/WebGLBuild/
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
@@ -22,7 +24,6 @@
 # Visual Studio cache directory
 .vs/
 .vscode/
-
 .UserSettings/
 
 # Gradle cache directory
@@ -60,4 +61,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+
 

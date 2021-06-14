@@ -10,8 +10,11 @@ public class BaseCharacter
     public int startingAge = 12;
     public float startingMoney = 100;
     public float startingEnergy = 100;
-    public float startingHappiness = 0;
-    public float reputation = 0; //TODO, inmplement this
+    public float startingHappiness = 50;
+    public float maxHappiness=100;
+    public float startingReputation = 0; 
+    public float startingEducation = 0; 
+    public float maxEducation=100;
     public float totalItemValue = 0; //TODO, inmplement this
     public bool hasSucceededHighSchool = true; //TODO, inmplement this
     public bool hasSucceededCollege = false; //TODO, inmplement this
@@ -23,7 +26,10 @@ public class BaseCharacter
     private float money;
     private float energy;
     private float happiness;
+    private float education;
+    private int eventsExperiencedThisDay =0;
 
+    private float reputation;
     // Start is called before the first frame update
     public BaseCharacter()
     {
@@ -32,10 +38,13 @@ public class BaseCharacter
         money = startingMoney;
         energy = startingEnergy;
         happiness = startingHappiness;
+        reputation = startingReputation; 
+        education = startingEducation;
     }
 
     public void IncrementAge(int amount){
-        this.age = age + amount;
+        age = age + amount;
+        eventsExperiencedThisDay=0;
     }
 
     public void SetCharacterNickName(string nickName){
@@ -43,40 +52,49 @@ public class BaseCharacter
     }
 
     public void SetAvatar(Sprite avatar){
-        Debug.Log("SavingAvatarOfChoice");
         this.avatar=SpriteData.FromSprite(avatar);
     }
 
-    public void IncrementMoney(float amount){
+    public void AlterMoney(float amount){
         money=money+amount;
     }
 
-    public void DecrementMoney(float amount){
-        money=money-amount;
+    public void AlterEnergy(float amount){
+      float newEnergy = energy+amount;
+        if(newEnergy<0){
+            energy=0;
+        }
+        else if(newEnergy>startingEnergy){
+                energy = startingEnergy;
+        }
+        else
+        {
+            energy=newEnergy;
+        }
+        
     }
+     public void RestoreEnergy(){
+         energy=startingEnergy;
+     }
 
-    public void IncrementEnergy(float amount){
-        energy=energy+amount;
-    }
-
-    public void DecrementEnergy(float amount){
-        energy=energy-amount;
-    }
-
-    public void IncrementHappiness(float amount){
-        happiness=happiness+amount;
-        //TODO: Change sprite when happiness changes
-    }
-
-    public void DecrementHappiness(float amount){
-        happiness=happiness-amount;
+    public void AlterHappiness(float amount){
+        float newHappiness = happiness+amount;
+        if(newHappiness<0){
+            happiness=0;
+        }
+        else if(newHappiness>maxHappiness){
+                happiness = maxHappiness;
+        }
+        else
+        {
+            happiness=newHappiness;
+        }
         //TODO: Change sprite when happiness changes
     }
 
     public Sprite getAvatar(){
-        Debug.Log(avatar.data);
-        Debug.Log("Getting Avatar");
-        return SpriteData.ToSprite(avatar);//avatar;
+
+        return SpriteData.ToSprite(avatar);
     }
 
     public int GetAge(){
@@ -101,4 +119,37 @@ public class BaseCharacter
         return energy;
     
 }
+
+    public float GetReputation(){
+        return reputation;
+    }
+
+    public void AlterReputation(float amount){
+         reputation = reputation + amount;
+    }
+    public float GetEducation(){
+        return education;
+    }
+
+    public void AlterEducation(float amount){
+         float newEducation = education+amount;
+        if(newEducation<0){
+            education=0;
+        }
+        else if(newEducation>maxEducation){
+                education = maxEducation;
+        }
+        else
+        {
+            education=newEducation;
+        }
+    }
+    
+    
+    public void IncrementEventsExperiencedThisDay(){
+        eventsExperiencedThisDay++;
+    }
+    public int GetEventsExperiencedThisDay(){
+        return eventsExperiencedThisDay;
+    }
 }

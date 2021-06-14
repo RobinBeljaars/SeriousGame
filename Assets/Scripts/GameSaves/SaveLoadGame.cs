@@ -23,6 +23,7 @@ public static class SaveLoadGame
             FileStream file = File.Open(Application.persistentDataPath +"/savedGames.gd", FileMode.Open);
             SaveLoadGame.game = (Game)bf.Deserialize(file);
             file.Close();
+        }else{
         }
     }
 }
