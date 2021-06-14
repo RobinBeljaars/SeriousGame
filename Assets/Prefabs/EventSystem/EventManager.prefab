@@ -170,7 +170,7 @@ MonoBehaviour:
     maxAge: 19
     options:
     - title: 1 euro
-      moneyReward: 1
+      moneyReward: -1
       happinessReward: 0
       energyReward: 0
       itemValueReward: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
       educationReward: 0
       customRewardType: 0
     - title: 5 euro
-      moneyReward: 5
+      moneyReward: -5
       happinessReward: 0
       energyReward: 0
       itemValueReward: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
       educationReward: 0
       customRewardType: 0
     - title: 10 euro
-      moneyReward: 10
+      moneyReward: -10
       happinessReward: 0
       energyReward: 0
       itemValueReward: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
       educationReward: 0
       customRewardType: 0
     - title: 50 euro
-      moneyReward: 50
+      moneyReward: -50
       happinessReward: 0
       energyReward: 0
       itemValueReward: 0
@@ -202,7 +202,7 @@ MonoBehaviour:
       educationReward: 0
       customRewardType: 0
     - title: 100 euro
-      moneyReward: 100
+      moneyReward: -100
       happinessReward: 0
       energyReward: 0
       itemValueReward: 0

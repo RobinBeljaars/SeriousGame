@@ -35,8 +35,12 @@ public class EventTimer : MonoBehaviour
 
             //Check if the maxium is reached or noet    
             if(maxEventsPerYear>Game.currentGame.PlayerData.GetEventsExperiencedThisDay()){
-                    AudioController.Instance.PlayNotification();
-                    eventManager.GenerateEvent();
+                    //With 0 energy we don't want new events spawning
+                    if(Game.currentGame.PlayerData.getEnergy()!=0){
+
+                        AudioController.Instance.PlayNotification();
+                        eventManager.GenerateEvent();
+                    }
                 }
             }  
         }
