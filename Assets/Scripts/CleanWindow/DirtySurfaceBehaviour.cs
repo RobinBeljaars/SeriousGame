@@ -11,6 +11,8 @@ public class DirtySurfaceBehaviour : MonoBehaviour
     public Slider slider;
     private Texture2D mainTexture;
     public UnityEvent<float> SurfaceEmpty;
+
+    public NavigationScript navigationScript;
     private float startTime;
 
     // Start is called before the first frame update
@@ -24,7 +26,6 @@ public class DirtySurfaceBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Cleanliness());
         if (Input.GetMouseButton(0))
         {
             var mouse = Input.mousePosition;
@@ -93,7 +94,10 @@ public class DirtySurfaceBehaviour : MonoBehaviour
                 }
             }
         }
-        Debug.Log(clean + " / " + max);
+        if(clean==max){
+            //We're done
+             navigationScript.SwitchScreen();
+        }
         return clean / max;
     }
 }
