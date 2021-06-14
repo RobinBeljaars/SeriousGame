@@ -24,7 +24,7 @@ public class SoccerBall : MovingEntity_CH4
         oldPos = Vector3.zero;
         velocity = Vector3.zero;
         owner = null;
-        transform.position = Vector3.zero;
+        transform.position = new Vector3(0, 1, 0);
     }
 
     public float Speed()

@@ -115,6 +115,10 @@ public class PlayerBase : MovingEntity_CH4
         return homeRegion;
     }
 
+    public void warpHome(){
+        transform.position = homeRegion;
+    }
+
     public void SetHomeRegion(Vector3 region)
     {
         homeRegion = region;

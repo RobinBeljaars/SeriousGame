@@ -19,7 +19,7 @@ public class CylinderController : MonoBehaviour
 
     public void Move(Vector3 movement)
     {
-        rb.AddForce(movement * speed);
+        rb.MovePosition(transform.position + movement * speed);
     }
 
     void OnTriggerEnter(Collider other)

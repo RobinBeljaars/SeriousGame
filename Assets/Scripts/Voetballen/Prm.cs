@@ -21,7 +21,7 @@ public class Prm : MonoBehaviour
     public float PlayerMaxSpeedWithBall = 2f;
     public float PlayerMaxSpeedWithoutBall = 2.8f;
     public float PlayerInTargetRange = 3f;
-    public float PlayerKickingDistance = .2f;
+    public float PlayerKickingDistance = 1;
     public float MinPassDist = 1f;
     public float MaxDribbleForce = .6f;
     public float GoalKeeperTendingDistance = 2f;

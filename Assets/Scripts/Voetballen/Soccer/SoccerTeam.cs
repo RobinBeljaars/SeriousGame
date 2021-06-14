@@ -154,6 +154,12 @@ public class SoccerTeam : MonoBehaviour
         foreach (var item in players)
         {
             PlayerBase pb = item.GetComponent<PlayerBase>();
+            foreach(var player in players){
+                player.GetComponent<PlayerBase>().warpHome();
+            }
+            foreach(var opponent in opponentTeam.players){
+                opponent.GetComponent<PlayerBase>().warpHome();
+            }
             if (pb.Role() != "GoalKeeper")
             {
                
@@ -164,6 +170,11 @@ public class SoccerTeam : MonoBehaviour
 
             }
         }
+    }
+
+    public void Reload(){
+        ReturnAllFieldPlayersToHome();
+        ball.ResetBallState();
     }
 
     public void RequestPass(FieldPlayer requester)

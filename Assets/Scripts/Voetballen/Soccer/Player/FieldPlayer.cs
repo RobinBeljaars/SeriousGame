@@ -9,8 +9,13 @@ public class FieldPlayer : PlayerBase
     [Header("CurState")]
     [SerializeField]
     private string state;
+
+    public bool Player;
+
+    private bool PassLock;
     void Start()
     {
+        PassLock = Player;
         m_pStateMachine = new StateMachine<FieldPlayer>(this);
         m_pStateMachine.SetCurrentState(ReturnToHomeRegion.instance);
         m_pStateMachine.SetGlobalState(GlobalPlayerState.instance);
@@ -72,8 +77,13 @@ public class FieldPlayer : PlayerBase
     {
         while (true)
         {
-            Vector3 desiredVelocity = Steering().Calculate() / 70f;
-            transform.position = (Vector3)transform.position + desiredVelocity;
+            if(!Player){
+                Vector3 desiredVelocity = Steering().Calculate() / 70f;
+                transform.position = (Vector3)transform.position + desiredVelocity;
+            } else if(state == "ReturnToHomeRegion"){
+                Vector3 desiredVelocity = Steering().Calculate() / 70f;
+                transform.position = (Vector3)transform.position + desiredVelocity;
+            }
             yield return new WaitForSeconds(0.05f);
         }
     }
@@ -102,5 +112,13 @@ public class FieldPlayer : PlayerBase
     public StateMachine<FieldPlayer> GetFSM()
     {
         return m_pStateMachine;
+    }
+
+    public void TogglePassLock(){
+        PassLock = !PassLock;
+    }
+
+    public bool passLock(){
+        return PassLock;
     }
 }

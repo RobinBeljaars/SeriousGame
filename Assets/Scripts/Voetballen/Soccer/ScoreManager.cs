@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-     public Text redScore;
+    public Text redScore;
     public Text blueScore;
     private bool isScored;
 
@@ -14,17 +14,37 @@ public class ScoreManager : MonoBehaviour
         isScored = false;
     }
 
-    private void OnTriggerEnter(Collider other) {
+    private void Update()
+    {
+        if (int.Parse(blueScore.text) >= 5)
+        {
+            //lose condition
+            Application.Quit();
+            Debug.Log("lose");
+        }
+        else if (int.Parse(redScore.text) >= 5)
+        {
+            //win condition
+
+            Debug.Log("Win");
+            Application.Quit();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
         if (isScored)
             return;
-        
+
         isScored = true;
 
-        if(gameObject.name == "RedWall"){
-            int score = int.Parse(blueScore.text) +1;
+        if (gameObject.name == "RedWall")
+        {
+            int score = int.Parse(blueScore.text) + 1;
             blueScore.text = score.ToString();
         }
-        else{
+        else
+        {
             int score = int.Parse(redScore.text) + 1;
             redScore.text = score.ToString();
         }
@@ -37,7 +57,8 @@ public class ScoreManager : MonoBehaviour
         isScored = false;
     }
 
-    private IEnumerator WaitTillWallPlayerAtHome(){
+    private IEnumerator WaitTillWallPlayerAtHome()
+    {
         GoalKeeper keeper = GameObject.Find("1").GetComponent<GoalKeeper>();
         while (!keeper.Team().AllPlayersAtHome() || !keeper.Team().opponentTeam.AllPlayersAtHome())
         {

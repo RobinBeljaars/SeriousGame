@@ -53,13 +53,16 @@ public class GlobalPlayerState : State<FieldPlayer>
                 {
                     FieldPlayer receiver = telegram.infos.gameObject.GetComponent<FieldPlayer>();
 
-                    if (player.Team().Receiver() != null && !player.BallWithKickingRange())
+                    if (player.Team().Receiver() != null && !player.BallWithKickingRange() || player.passLock())
                     {
                         return true;
+                    } else if(player.Player && !player.passLock()){
+                        player.TogglePassLock();
                     }
 
                     player.Ball().SetOwner(receiver.gameObject);
-
+                    // player.Player;
+                    // Kick ball to player
                     player.Ball().Kick((receiver.transform.position - player.Ball().transform.position).normalized, Prm.instance.MaxPassingForce);
                     MessageDispatcher_CH4.instance.DispatchMessage(0f, player.ID(), receiver.ID(), SoccerMessages.Msg_ReceiveBall, receiver.transform);
 
