@@ -11,8 +11,10 @@ public class BaseCharacter
     public float startingMoney = 100;
     public float startingEnergy = 100;
     public float startingHappiness = 50;
+    public float maxHappiness=100;
     public float startingReputation = 0; 
     public float startingEducation = 0; 
+    public float maxEducation=100;
     public float totalItemValue = 0; //TODO, inmplement this
     public bool hasSucceededHighSchool = true; //TODO, inmplement this
     public bool hasSucceededCollege = false; //TODO, inmplement this
@@ -53,52 +55,41 @@ public class BaseCharacter
         this.avatar=SpriteData.FromSprite(avatar);
     }
 
-    public void IncrementMoney(float amount){
+    public void AlterMoney(float amount){
         money=money+amount;
     }
 
-    public void DecrementMoney(float amount){
-        money=money-amount;
-    }
-
-    public void IncrementEnergy(float amount){
-      
-            energy=energy+amount;
+    public void AlterEnergy(float amount){
+      float newEnergy = energy+amount;
+        if(newEnergy<0){
+            energy=0;
+        }
+        else if(newEnergy>startingEnergy){
+                energy = startingEnergy;
+        }
+        else
+        {
+            energy=newEnergy;
+        }
         
     }
      public void RestoreEnergy(){
          energy=startingEnergy;
      }
 
-    public void DecrementEnergy(float amount){
-        if(amount>energy){
-            energy=0;
+    public void AlterHappiness(float amount){
+        float newHappiness = happiness+amount;
+        if(newHappiness<0){
+            happiness=0;
+        }
+        else if(newHappiness>maxHappiness){
+                happiness = maxHappiness;
         }
         else
-        {
-            energy=energy-amount;
-        }
-    }
-
-    public void IncrementHappiness(float amount){
-        float newHappiness = happiness+amount;
-        if(newHappiness>100){
-            happiness=100;
-        }else
         {
             happiness=newHappiness;
         }
         //TODO: Change sprite when happiness changes
-    }
-
-    public void DecrementHappiness(float amount){
-       if(amount>happiness){
-           happiness=0;
-       }
-       else
-       {
-           happiness=happiness-amount;
-       }
     }
 
     public Sprite getAvatar(){
@@ -133,32 +124,28 @@ public class BaseCharacter
         return reputation;
     }
 
-    public void IncrementReputation(float amount){
-         reputation = reputation +amount;
-    }
-     public void DecrementReputation(float amount){
-         reputation = reputation -amount;
+    public void AlterReputation(float amount){
+         reputation = reputation + amount;
     }
     public float GetEducation(){
         return education;
     }
 
-    public void IncrementEducation(float amount){
-         float newEducation = education +amount;
-         if(newEducation>100){
-             education=100;
-         }else
-         {
-             education = newEducation;
-         }
+    public void AlterEducation(float amount){
+         float newEducation = education+amount;
+        if(newEducation<0){
+            education=0;
+        }
+        else if(newEducation>maxEducation){
+                education = maxEducation;
+        }
+        else
+        {
+            education=newEducation;
+        }
     }
-     public void DecrementEducation(float amount){
-         if(amount>education){
-             education=0;
-         }else{
-             education = education-amount;
-         }
-    }
+    
+    
     public void IncrementEventsExperiencedThisDay(){
         eventsExperiencedThisDay++;
     }

@@ -217,6 +217,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50319449}
   m_CullTransparentMesh: 1
+--- !u!1 &53654760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8888346335845268836, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+  m_PrefabInstance: {fileID: 862422462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &53654762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53654760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 12
+  moneyChange: 0
+  energyChange: -10
+  happinessChange: 3
+  reputationChange: 2
+  educationChange: 0
+  feedbackText: Je hebt net lekker op de playstation gespeeld
+  feedBack: {fileID: 33885628}
 --- !u!1 &69582154
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +704,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: Voetballen
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
 --- !u!224 &486047603 stripped
 RectTransform:
@@ -821,6 +847,56 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2719024352862074578, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_PrefabInstance: {fileID: 539777234}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &633886567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+  m_PrefabInstance: {fileID: 1079918640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &633886568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633886567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 13
+  moneyChange: -3
+  energyChange: -12
+  happinessChange: 7
+  reputationChange: 6
+  educationChange: 0
+  feedbackText: Je bent zojuist lekker wezen sporten met je vrienden
+  feedBack: {fileID: 33885628}
+--- !u!1 &672930482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+  m_PrefabInstance: {fileID: 486047602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &672930486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672930482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 12
+  moneyChange: 0
+  energyChange: -8
+  happinessChange: 5
+  reputationChange: 4
+  educationChange: 0
+  feedbackText: Je bent zojuist lekker wezen voetballen
+  feedBack: {fileID: 33885628}
 --- !u!1 &770342286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8414923725838610944, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
@@ -1026,6 +1102,10 @@ PrefabInstance:
       propertyPath: UIToToggle.Array.data[0]
       value: 
       objectReference: {fileID: 50319449}
+    - target: {fileID: 8628479590692114842, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 55804a2f8fbe3b640852da3bfad83371, type: 3}
     - target: {fileID: 8888346334923727574, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0.75
@@ -1034,7 +1114,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0.55
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8888346335845268837, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+    - {fileID: 7981027016030690259, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+    - {fileID: 1780716783742445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
 --- !u!1 &883503073 stripped
 GameObject:
@@ -1082,6 +1165,56 @@ MonoBehaviour:
   mode: 0
   sceneName: 3
   UIToToggle: []
+--- !u!1 &1006883864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7981027016030690258, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+  m_PrefabInstance: {fileID: 862422462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1006883866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006883864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 14
+  moneyChange: -20
+  energyChange: -10
+  happinessChange: 8
+  reputationChange: 15
+  educationChange: 0
+  feedbackText: Je hebt net dure merkkleding gekocht in de stad
+  feedBack: {fileID: 33885628}
+--- !u!1 &1027359036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+  m_PrefabInstance: {fileID: 2719024353264920860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1027359037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027359036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 20
+  moneyChange: 0
+  energyChange: 0
+  happinessChange: 0
+  reputationChange: 0
+  educationChange: 0
+  feedbackText: 
+  feedBack: {fileID: 33885628}
 --- !u!1001 &1079918640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1201,7 +1334,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: Sporten
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
 --- !u!224 &1079918641 stripped
 RectTransform:
@@ -1338,6 +1472,31 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2719024352862074578, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_PrefabInstance: {fileID: 1118183817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1129161463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1780716783742444, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+  m_PrefabInstance: {fileID: 862422462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129161465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129161463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 12
+  moneyChange: 0
+  energyChange: -6
+  happinessChange: 0
+  reputationChange: -1
+  educationChange: 2
+  feedbackText: Je hebt geleerd voor de aankomende toets
+  feedBack: {fileID: 33885628}
 --- !u!1 &1137656384 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1211299690130267760, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
@@ -1826,6 +1985,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SwitchScene
       objectReference: {fileID: 0}
+    - target: {fileID: 2350686125477700225, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2350686126732668241, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2036,5 +2199,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}

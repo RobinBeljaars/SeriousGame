@@ -25,9 +25,9 @@ public class Return : MonoBehaviour
     // Update is called once per frame
     void ClickedNext()
     {
-            Game.currentGame.PlayerData.DecrementEnergy(energyCost);
-            Game.currentGame.PlayerData.DecrementReputation(repCost);
-            Game.currentGame.PlayerData.IncrementEducation(educationReward);
+            Game.currentGame.PlayerData.AlterEnergy(energyCost);
+            Game.currentGame.PlayerData.AlterReputation(repCost);
+            Game.currentGame.PlayerData.AlterEducation(educationReward);
             navigationScript.SwitchScreen();
     }
 }

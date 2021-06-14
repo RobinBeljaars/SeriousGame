@@ -34,17 +34,17 @@ public class Rewards : MonoBehaviour
 
     public static void SumMoney(float amount = 10)
     {
-        Game.currentGame.PlayerData.IncrementMoney(amount);
+        Game.currentGame.PlayerData.AlterMoney(amount);
     }
 
     public static void SumHappiness(float happiness = 10)
     {
-        Game.currentGame.PlayerData.IncrementHappiness(happiness);
+        Game.currentGame.PlayerData.AlterHappiness(happiness);
     }
 
     public static void SumEnergy(float energy = 10)
     {
-        Game.currentGame.PlayerData.IncrementEnergy(energy);
+        Game.currentGame.PlayerData.AlterEnergy(energy);
     }
 
     public static void SumItemValue(float itemValue = 1)
@@ -54,12 +54,12 @@ public class Rewards : MonoBehaviour
 
     public static void SumReputation(float reputation = 5)
     {
-        Game.currentGame.PlayerData.IncrementReputation(reputation);
+        Game.currentGame.PlayerData.AlterReputation(reputation);
     }
 
     public static void SumEducation(float education = 5)
     {
-        Game.currentGame.PlayerData.IncrementEducation(education);
+        Game.currentGame.PlayerData.AlterEducation(education);
     }
 
     //Custom reward

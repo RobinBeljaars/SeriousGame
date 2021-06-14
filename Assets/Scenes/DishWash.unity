@@ -1381,7 +1381,7 @@ MonoBehaviour:
   navigationScript: {fileID: 986214773}
   Wintext: {fileID: 783065476}
   moneyReward: 5
-  energyCost: 3
+  energyCost: -3
 --- !u!114 &986214773
 MonoBehaviour:
   m_ObjectHideFlags: 0

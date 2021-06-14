@@ -2176,8 +2176,8 @@ MonoBehaviour:
   navigationScript: {fileID: 1758750603}
   nextButton: {fileID: 1758750600}
   educationReward: 7
-  energyCost: 3
-  repCost: 1
+  energyCost: -3
+  repCost: -1
 --- !u!1 &1768094592
 GameObject:
   m_ObjectHideFlags: 0

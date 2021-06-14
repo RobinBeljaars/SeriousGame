@@ -17,8 +17,8 @@ public class Restart : MonoBehaviour
     void Start()
     {
             Wintext.text="Gefeliciteerd, het aanrecht is weer schoon!\nJe hebt "+moneyReward+" euro gekregen van je ouders en de moeite heeft je "+energyCost+" energiepunten gekost.\nDruk op R om terug te gaan!";
-            Game.currentGame.PlayerData.IncrementMoney(moneyReward);
-            Game.currentGame.PlayerData.DecrementEnergy(energyCost);
+            Game.currentGame.PlayerData.AlterMoney(moneyReward);
+            Game.currentGame.PlayerData.AlterEnergy(energyCost);
     }
 
     // Update is called once per frame
