@@ -9,6 +9,7 @@ public class DirtySurfaceBehaviour : MonoBehaviour
 {
     public int Radius;
     public Slider slider;
+    public GameObject Sponge;
     private Texture2D mainTexture;
     public UnityEvent<float> SurfaceEmpty;
 
@@ -34,7 +35,8 @@ public class DirtySurfaceBehaviour : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                
+                Sponge.transform.position = hit.point;
+                Debug.Log("Spawned Sponge at " + hit.point.x + ", " + hit.point.y);
                 Texture2D texture2D = new Texture2D(mainTexture.width, mainTexture.height, TextureFormat.RGBA32, false);
                 var X = Mathf.CeilToInt(hit.textureCoord.x * mainTexture.width);
                 var Y = Mathf.CeilToInt(hit.textureCoord.y * mainTexture.width);
@@ -45,6 +47,13 @@ public class DirtySurfaceBehaviour : MonoBehaviour
                 returnTex.Apply();
                 renderer.material.mainTexture = returnTex;
             }
+            else
+            {
+                Sponge.transform.position = new Vector3(3000, 3000, 3000);
+            }
+        } else
+        {
+            Sponge.transform.position = new Vector3(3000, 3000, 3000);
         }
 
         slider.value = Cleanliness();
