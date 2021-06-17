@@ -300,6 +300,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -326,6 +327,7 @@ MonoBehaviour:
   myMaxTurnRate: 4.16
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -2349,6 +2351,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -2377,6 +2380,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -3055,6 +3059,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -3083,6 +3088,7 @@ MonoBehaviour:
   myMaxTurnRate: 3.04
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -3524,6 +3530,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -3550,6 +3557,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -4251,6 +4259,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -4277,6 +4286,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 1, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -4772,6 +4782,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -4800,6 +4811,7 @@ MonoBehaviour:
   myMaxTurnRate: 3.04
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -7351,6 +7363,7 @@ MonoBehaviour:
   gamepaused: 0
   happinessWinScore: 5
   RepScore: 10
+  energyCost: -12
   navigationScript: {fileID: 1545746988}
   red: {fileID: 1672920638}
   blue: {fileID: 746665119}
@@ -8125,6 +8138,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -8153,6 +8167,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 9, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -8630,6 +8645,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -8656,6 +8672,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -8885,6 +8902,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 9.68, y: 0, z: 8.86}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -8911,6 +8929,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -9587,6 +9606,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 0}
@@ -9613,6 +9633,7 @@ MonoBehaviour:
   myMaxTurnRate: 2
   myMaxForce: {x: 10, y: 0, z: 10}
   playerRole: 
+  staticHomeRegion: {x: 0, y: 0, z: 0}
   homeRegion: {x: 0, y: 0, z: 0}
   steering: {fileID: 0}
   soccerBall: {fileID: 2021273026}
@@ -9844,7 +9865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080208413}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0001, z: 0}
   m_LocalScale: {x: 2, y: 0.01, z: 2}
   m_Children: []
   m_Father: {fileID: 337807943}

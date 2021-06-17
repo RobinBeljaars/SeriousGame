@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ScenarioScript : MonoBehaviour
 {
-    public GenericAction footBallScene;
+    public NavigationScript footBallScene;
     public NavigationScript dishWashScene;
     public NavigationScript homeWorkScene;
     public GenericAction lisaScene;
@@ -136,7 +136,7 @@ public class ScenarioScript : MonoBehaviour
         {
             Game.currentGame.scenario1Played = true;
 
-            footBallScene.performAction();
+            footBallScene.SwitchScreen();
         
         } else if (Game.currentGame.scenariosCount == 9)
         {

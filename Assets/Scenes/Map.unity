@@ -681,6 +681,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Voetballen
       objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: sceneName
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -713,8 +729,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: Voetballen
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
 --- !u!224 &486047603 stripped
 RectTransform:
@@ -885,38 +900,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAge: 13
+  minAge: 12
   moneyChange: -3
   energyChange: -14
   happinessChange: 8
   reputationChange: 6
   educationChange: 0
   feedbackText: Je bent zojuist lekker wezen sporten met je vrienden
-  feedBack: {fileID: 1092362011}
---- !u!1 &672930482 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
-  m_PrefabInstance: {fileID: 486047602}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &672930486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672930482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minAge: 12
-  moneyChange: 0
-  energyChange: -9
-  happinessChange: 5
-  reputationChange: 5
-  educationChange: 0
-  feedbackText: Je bent zojuist lekker wezen voetballen
   feedBack: {fileID: 1092362011}
 --- !u!1 &770342286 stripped
 GameObject:
@@ -1798,6 +1788,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505544896}
   m_CullTransparentMesh: 1
+--- !u!1 &1698971118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+  m_PrefabInstance: {fileID: 2719024353264920860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1698971119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698971118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 19
+  moneyChange: 0
+  energyChange: 0
+  happinessChange: 0
+  reputationChange: 0
+  educationChange: 0
+  feedbackText: 
+  feedBack: {fileID: 1092362011}
 --- !u!224 &1745297358 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2719024352862074578, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
@@ -2279,11 +2294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2487826905790615731, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 84.000015
+      value: 84.00003
       objectReference: {fileID: 0}
     - target: {fileID: 2487826906286074882, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 205.00002
+      value: 205.00003
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 685268372, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
@@ -2452,5 +2467,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}

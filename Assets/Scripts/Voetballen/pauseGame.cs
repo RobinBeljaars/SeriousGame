@@ -8,8 +8,9 @@ public class pauseGame : MonoBehaviour
     public bool gameWon = false;
     public bool gamepaused = false;
 
-    public int happinessWinScore = 5;
-    public int RepScore = 10;
+    public int happinessWinScore = 7;
+    public int RepScore = 15;
+    public int energyCost = 12;
     
     public NavigationScript navigationScript;
 
@@ -40,12 +41,13 @@ public class pauseGame : MonoBehaviour
             // decrease als je veloren hebt
         if(gameWon){
             Game.currentGame.PlayerData.AlterHappiness(happinessWinScore);
-            Game.currentGame.PlayerData.AlterReputation(RepScore);
         } else{
-            
+        
             Game.currentGame.PlayerData.AlterHappiness(-1*happinessWinScore);
-            Game.currentGame.PlayerData.AlterReputation(RepScore);
+            
         }
+            Game.currentGame.PlayerData.AlterReputation(RepScore);
+            Game.currentGame.PlayerData.AlterEnergy(energyCost);
             navigationScript.SwitchScreen();
     }
 }
