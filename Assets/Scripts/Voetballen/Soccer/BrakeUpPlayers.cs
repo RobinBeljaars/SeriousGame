@@ -22,7 +22,7 @@ public class BrakeUpPlayers : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         breakup(redTeam);
         breakup(blueTeam);
