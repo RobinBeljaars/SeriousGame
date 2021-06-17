@@ -31,13 +31,15 @@ public class BrakeUpPlayers : MonoBehaviour
     private void breakup(GameObject[] players){
         List<GameObject> pastChildren = new List<GameObject>();
         foreach(GameObject player in players){
+            FieldPlayer fp = player.GetComponent<FieldPlayer>();
             pastChildren.Add(player);
             foreach(GameObject otherplayer in players){
                 float distance = Vector3.Distance(player.transform.position ,otherplayer.transform.position);
                 Vector3 otherPb = otherplayer.GetComponent<PlayerBase>().HomeRegion();
                 if(!pastChildren.Contains(otherplayer) && distance <= minDistance){
                     // player not home
-                    if(CoinToss() || isEqual(Vector3.Distance(otherPb, otherplayer.transform.position), 0f)){
+                    FieldPlayer ofp = otherplayer.GetComponent<FieldPlayer>();
+                    if((ofp.Player || CoinToss() || isEqual(Vector3.Distance(otherPb, otherplayer.transform.position), 0f)) && !fp.Player){
                         player.GetComponent<PlayerBase>().warpHome();
                         // player back to home
                     }else{
