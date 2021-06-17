@@ -47,7 +47,9 @@ public class GlobalPlayerState : State<FieldPlayer>
                 }
             case SoccerMessages.Msg_Wait:
                 {
+                    if(!player.Player){
                     player.GetFSM().ChangeState(Wait.instance);
+                    }
                     return true;
                 }
             case SoccerMessages.Msg_PassToMe:

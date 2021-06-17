@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CHangeSprite : MonoBehaviour
 {
+    public SpriteRenderer render;
     // Start is called before the first frame update
     void Start()
     {
-        var render = gameObject.GetComponent<SpriteRenderer>();
         if(Game.currentGame == null){
             Game.currentGame = new Game();
         }
