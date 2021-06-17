@@ -19,7 +19,7 @@ public class playerInput : MonoBehaviour
             team.opponentTeam.Reload();
         } else if(Input.GetKeyUp(KeyCode.Escape)){
             pause.Pause();
-        } else if(Input.GetKeyUp("q")){
+        } else if(Input.GetKeyUp(KeyCode.Space)){
             if(bsPlayer.DistToBall() < 1f){
             player.GetFSM().ChangeState(KickBall.instance);
             }
