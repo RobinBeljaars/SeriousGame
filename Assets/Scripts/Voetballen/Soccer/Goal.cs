@@ -19,8 +19,8 @@ public class Goal : MonoBehaviour
     
     private void Awake()
     {
-        leftPost = new Vector3(transform.position.x , transform.position.y, transform.position.z + 2.57f);
-        rightPost = new Vector3(transform.position.x, transform.position.y, transform.position.z - 2.57f);
+        leftPost = new Vector3(transform.position.x , transform.position.y, transform.position.z + 4.5f);
+        rightPost = new Vector3(transform.position.x, transform.position.y, transform.position.z - 4.5f);
         center = (leftPost + rightPost) / 2;
         numGoalsScored = 0;
     }

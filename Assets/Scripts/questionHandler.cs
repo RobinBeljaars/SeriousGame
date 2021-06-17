@@ -9,10 +9,6 @@ public class questionHandler : MonoBehaviour
     public GameObject correctAnswerScreen;
     public Text questionText;
     public List<Text> answertexts;
-    public Text answer1Text;
-    public Text answer2Text;
-    public Text answer3Text;
-    public Text answer4Text;
     public Button answer1Btn;
     public Button answer2Btn;
     public Button answer3Btn;
@@ -50,7 +46,6 @@ public class questionHandler : MonoBehaviour
     {
         Debug.Log("You have clicked the button for answer 1");
         string answer = answertexts[0].text;
-        // string answer = answer1Text.text;
         checkAnswerIsCorrect(answer);
     }
 
@@ -58,7 +53,6 @@ public class questionHandler : MonoBehaviour
     {
         Debug.Log("You have clicked the button for answer 2");
         string answer = answertexts[1].text;
-        // string answer = answer2Text.text;
         checkAnswerIsCorrect(answer);
     }
 
@@ -66,7 +60,6 @@ public class questionHandler : MonoBehaviour
     {
         Debug.Log("You have clicked the button for answer 3");
         string answer = answertexts[2].text;
-        // string answer = answer3Text.text;
         checkAnswerIsCorrect(answer);
     }
 
@@ -74,7 +67,6 @@ public class questionHandler : MonoBehaviour
     {
         Debug.Log("You have clicked the button for answer 4");
         string answer = answertexts[3].text;
-        // string answer = answer4Text.text;
         checkAnswerIsCorrect(answer);
     }
 
@@ -133,7 +125,6 @@ public class questionHandler : MonoBehaviour
         Debug.Log(random);
         if (answers.ContainsKey(keyOfQuestion))
         {
-            // answer1Text.text = answers[keyOfQuestion];
             answertexts[random].text = answers[keyOfQuestion];
             correctAnswer = random;
         }
@@ -146,9 +137,6 @@ public class questionHandler : MonoBehaviour
                     t.text = getRandomCity(answertexts[random].text);
                 }
             }
-            // answer2Text.text = getRandomCity(answer1Text.text);
-            // answer3Text.text = getRandomCity(answer1Text.text);
-            // answer4Text.text = getRandomCity(answer1Text.text);
         } else
         {
             List<String> wrongAnswers = new List<String>();
@@ -163,9 +151,6 @@ public class questionHandler : MonoBehaviour
                     answerIndex++;
                 }
             }
-            // answer2Text.text = "75";
-            // answer3Text.text = "100";
-            // answer4Text.text = "40";
         }
 
         
