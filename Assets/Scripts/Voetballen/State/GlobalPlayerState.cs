@@ -13,7 +13,7 @@ public class GlobalPlayerState : State<FieldPlayer>
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
 
     public override bool OnMessage(FieldPlayer player, Telegram_CH4 telegram)

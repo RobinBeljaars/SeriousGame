@@ -13,7 +13,7 @@ public class MessageDispatcher_CH4 : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
     private void Start()
     {

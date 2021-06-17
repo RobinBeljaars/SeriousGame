@@ -13,7 +13,7 @@ public class SoccerMessages : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
 
     public const int Msg_ReceiveBall = 0;

@@ -13,7 +13,7 @@ public class PutBallBackInPlay : State<GoalKeeper>
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
 
     public override void Enter(GoalKeeper keeper)

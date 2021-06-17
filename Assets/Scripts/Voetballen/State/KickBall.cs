@@ -13,7 +13,7 @@ public class KickBall : State<FieldPlayer>
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
 
     IEnumerator ReadyForKick(FieldPlayer fp)

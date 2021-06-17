@@ -13,7 +13,7 @@ public class ChaseBall : State<FieldPlayer>
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
     public override void Enter(FieldPlayer player)
     {

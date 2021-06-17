@@ -13,7 +13,7 @@ public class GlobalKeeperState : State<GoalKeeper>
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
 
     public override bool OnMessage(GoalKeeper keeper, Telegram_CH4 telegram)

@@ -17,7 +17,7 @@ public class EntityManager_CH4 : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
 
         m_EntityMap = new Dictionary<int, PlayerBase>();
     }

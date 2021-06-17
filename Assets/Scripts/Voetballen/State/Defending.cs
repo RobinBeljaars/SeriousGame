@@ -13,7 +13,7 @@ public class Defending : State<SoccerTeam>
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
     }
 
     public override void Enter(SoccerTeam team)
