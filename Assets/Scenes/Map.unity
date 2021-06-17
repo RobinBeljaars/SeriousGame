@@ -331,6 +331,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5196294215415447045, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: easyStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196294215415447045, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: maxAgeEasyStart
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196294215415447045, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: minAgeEasyStart
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7854469474978250244, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
       propertyPath: m_Name
       value: EventSystem
@@ -823,7 +835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: minEnergytoAllowSwitch
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
@@ -875,8 +887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minAge: 13
   moneyChange: -3
-  energyChange: -12
-  happinessChange: 7
+  energyChange: -14
+  happinessChange: 8
   reputationChange: 6
   educationChange: 0
   feedbackText: Je bent zojuist lekker wezen sporten met je vrienden
@@ -900,9 +912,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minAge: 12
   moneyChange: 0
-  energyChange: -8
+  energyChange: -9
   happinessChange: 5
-  reputationChange: 4
+  reputationChange: 5
   educationChange: 0
   feedbackText: Je bent zojuist lekker wezen voetballen
   feedBack: {fileID: 1092362011}
@@ -965,7 +977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: minEnergytoAllowSwitch
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: UIToToggle.Array.data[1]
@@ -1218,7 +1230,7 @@ MonoBehaviour:
   minAge: 14
   moneyChange: -20
   energyChange: -10
-  happinessChange: 8
+  happinessChange: 6
   reputationChange: 15
   educationChange: 0
   feedbackText: Je hebt net dure merkkleding gekocht in de stad
@@ -1470,7 +1482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: minEnergytoAllowSwitch
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
@@ -1523,7 +1535,7 @@ MonoBehaviour:
   minAge: 12
   moneyChange: 0
   energyChange: -6
-  happinessChange: 0
+  happinessChange: -4
   reputationChange: -1
   educationChange: 2
   feedbackText: Je hebt geleerd voor de aankomende toets
@@ -2000,7 +2012,7 @@ MonoBehaviour:
   energyChange: -20
   happinessChange: 20
   reputationChange: 65
-  educationChange: -4
+  educationChange: -3
   feedbackText: Je bent tot in de nachtelijke uurtjes op pad geweest en hebt je vrienden
     een rondje gegeven
   feedBack: {fileID: 1092362011}
@@ -2267,11 +2279,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2487826905790615731, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 84
+      value: 84.000015
       objectReference: {fileID: 0}
     - target: {fileID: 2487826906286074882, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 205
+      value: 205.00002
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 685268372, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
