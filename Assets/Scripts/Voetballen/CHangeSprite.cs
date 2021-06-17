@@ -12,11 +12,7 @@ public class CHangeSprite : MonoBehaviour
         if(Game.currentGame == null){
             Game.currentGame = new Game();
         }
-        if (Game.currentGame.PlayerData.getAvatar() != null)
-        {
-            render.sprite = Game.currentGame.PlayerData.getAvatar();
-        }
-        // 
+        
     }
 
     // Update is called once per frame
