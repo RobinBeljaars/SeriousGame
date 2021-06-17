@@ -41,16 +41,16 @@ public class EventTimer : MonoBehaviour
                     if(maxEventsPerYear>Game.currentGame.PlayerData.GetEventsExperiencedThisDay()){
                         //With 0 energy we don't want new events spawning
                         if(Game.currentGame.PlayerData.getEnergy()!=0){
-AudioController.Instance.PlayNotification();
+
                             bool skipEvent=false;
                             if(easyStart&&Game.currentGame.PlayerData.GetAge()<=maxAgeEasyStart){
-                                //A 50 % check will now occur if the event actually happens
+                                //A 50 % check will now occur if the event actually happens, this will slow down events
                                 if(Random.Range(1,3)==1){
                                     skipEvent=true;
                                 }
                             }
                             if(!skipEvent){
-                            
+                            AudioController.Instance.PlayNotification();
                             eventManager.GenerateEvent();
                             }
                             
