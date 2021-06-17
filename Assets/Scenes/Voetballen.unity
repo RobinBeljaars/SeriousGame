@@ -464,6 +464,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   score: 0
+--- !u!1001 &81747370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1027691953077849220, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_Name
+      value: AudioController
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027691953077849222, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e02549eeb54c34d4caf455d9beb7d8b7, type: 3}
 --- !u!1 &81770144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,7 +1860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
-  pause: {fileID: 0}
+  pause: {fileID: 1545746987}
 --- !u!1 &441368831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,7 +2353,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!114 &484139639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3002,7 +3059,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!114 &530776585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3499,7 +3556,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &653415091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4721,7 +4778,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!114 &1032501895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8221,7 +8278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
-  pause: {fileID: 0}
+  pause: {fileID: 1545746987}
 --- !u!1 &1705997504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8601,7 +8658,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &1793435353
 GameObject:
   m_ObjectHideFlags: 0
@@ -8856,7 +8913,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &1897563523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9558,7 +9615,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &2060834474
 GameObject:
   m_ObjectHideFlags: 0
