@@ -2353,7 +2353,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!114 &484139639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3059,7 +3059,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!114 &530776585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3556,7 +3556,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!1 &653415091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4778,7 +4778,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!114 &1032501895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8658,7 +8658,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!1 &1793435353
 GameObject:
   m_ObjectHideFlags: 0
@@ -8913,7 +8913,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!1 &1897563523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9615,7 +9615,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 1
+  Player: 0
 --- !u!1 &2060834474
 GameObject:
   m_ObjectHideFlags: 0

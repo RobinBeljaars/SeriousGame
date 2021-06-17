@@ -95,9 +95,6 @@ public class FieldPlayer : PlayerBase
                 if(!Player){
                     Vector3 desiredVelocity = Steering().Calculate() / 70f;
                     transform.position = (Vector3)transform.position + desiredVelocity;
-                } else if(state == "ReturnToHomeRegion"){
-                    Vector3 desiredVelocity = Steering().Calculate() / 70f;
-                    transform.position = (Vector3)transform.position + desiredVelocity;
                 }
             }
             yield return new WaitForSeconds(0.05f);
