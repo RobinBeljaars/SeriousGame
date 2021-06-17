@@ -261,6 +261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxEventsPerYear: 5
+  easyStart: 1
+  maxAgeEasyStart: 13
   minSecondsBetweenEvents: 10
   maxSecondsBetweenEvents: 30
   eventManager: {fileID: 7361356214717762668}

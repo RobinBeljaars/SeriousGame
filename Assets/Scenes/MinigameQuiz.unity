@@ -2161,6 +2161,9 @@ MonoBehaviour:
   mode: 0
   sceneName: 0
   ignoreUIConstraint: 1
+  minAgeToAllowSwitch: 0
+  minEnergytoAllowSwitch: 0
+  feedBack: {fileID: 0}
   UIToToggle: []
 --- !u!114 &1758750604
 MonoBehaviour:
@@ -2176,8 +2179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navigationScript: {fileID: 1758750603}
   nextButton: {fileID: 1758750600}
-  educationReward: 7
-  energyCost: -3
+  educationReward: 4
+  energyCost: -6
   repCost: -1
 --- !u!1 &1768094592
 GameObject:

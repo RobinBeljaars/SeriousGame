@@ -7,6 +7,9 @@ public class EventTimer : MonoBehaviour
     // Start is called before the first frame update
 
     public int maxEventsPerYear;
+    public bool easyStart;
+
+    public int maxAgeEasyStart;
     public int minSecondsBetweenEvents;
 
     public int maxSecondsBetweenEvents;
@@ -33,14 +36,24 @@ public class EventTimer : MonoBehaviour
             if(!Game.currentGame.GetScenarioStatus()){
                 //Check if an event is allready taking place, if not we don't want a new one
                 if(!Game.currentGame.GetEventStatus()){
-
-                    //Check if the maxium is reached or noet    
+                        
+                    //Check if the maxium is reached or not    
                     if(maxEventsPerYear>Game.currentGame.PlayerData.GetEventsExperiencedThisDay()){
                         //With 0 energy we don't want new events spawning
                         if(Game.currentGame.PlayerData.getEnergy()!=0){
-
-                            AudioController.Instance.PlayNotification();
+AudioController.Instance.PlayNotification();
+                            bool skipEvent=false;
+                            if(easyStart&&Game.currentGame.PlayerData.GetAge()<=maxAgeEasyStart){
+                                //A 50 % check will now occur if the event actually happens
+                                if(Random.Range(1,3)==1){
+                                    skipEvent=true;
+                                }
+                            }
+                            if(!skipEvent){
+                            
                             eventManager.GenerateEvent();
+                            }
+                            
                         }
                     }
                 }  
