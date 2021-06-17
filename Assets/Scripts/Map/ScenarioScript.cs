@@ -167,8 +167,8 @@ public class ScenarioScript : MonoBehaviour
     void retrieveScenarios()
     {
         scenarios.Add(0, "Wat leuk dat je mee doet aan Future Hero. Dit spel moet je ervaren. We gaan meteen beginnen!");
-        scenarios.Add(1, "Je bent aangekomen op je startscherm. De acitviteiten die je doet bepalen je succes. ");
-        scenarios.Add(2, "Denk goed na over je keuzes!");
+        scenarios.Add(1, "Je bent aangekomen op je startscherm. De acitviteiten die je doet bepalen je succes.\nBovenin zie je je energieniveau, elke activiteit die je uitvoert kost energie... ");
+        scenarios.Add(2, "Zodra je energie (bijna) op is moet je gaan slapen, waarop je steeds een jaartje ouder wordt.\nDenk goed na over je keuzes!");
         scenarios.Add(3, "Tom vraagt of je mee gaat voetballen. Je hebt ook zin om te voetballen! ");
         scenarios.Add(4, "Maar je kan ook thuis een klusje doen waarmee je een klein bedrag mee kunt verdienen.");
         scenarios.Add(5, "Wat kies je?");

@@ -24,7 +24,7 @@ public class SleepScript : MonoBehaviour {
         //We should only allow sleep when someone is acutally tired
         if(current.PlayerData.getEnergy()>minEnergyBeforeYouCanSleep){
             AudioController.Instance.PlayImpossibleChoice();
-           feedBack.text=("Je bent nog niet moe...");
+           feedBack.text=("Je bent nog niet moe...\nJe kunt slapen zodra je energieniveau onder de "+minEnergyBeforeYouCanSleep+" is");
         }
         else
         {

@@ -50,6 +50,7 @@ MonoBehaviour:
   optionObject: {fileID: 7126219200604825293, guid: aa60adc38587667498a95d38786049a5, type: 3}
   horizontalOptionList: {fileID: 0}
   verticalOptionList: {fileID: 0}
+  userFeedbackField: {fileID: 0}
   events:
   - title: Schoolspullen kopen toch een videospel? Dat is de vraag.
     desc: Je krijgt de keuze om schoolspulletjes te kopen of een vet nieuw videospel
@@ -64,6 +65,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: -10
       educationReward: 2
+      feedback: Je hebt schoolspullen gekocht, je vrienden kijken je vreemd aan dat
+        je daar je geld aan uitgeeft
       customRewardType: 0
     - title: Videospel
       moneyReward: -25
@@ -72,6 +75,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 10
       educationReward: -1
+      feedback: Je hebt een videogame aangeschaft. Je ouder vragen zich de impact
+        op je leerprestaties af.
       customRewardType: 0
   - title: Karweitje
     desc: Je vader kwam langs en vroeg of je zijn auto wilt wassen voor 5 euro. Echter
@@ -86,6 +91,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0
       educationReward: 0
+      feedback: Je vrienden zijn niet blij dat je hebt afgezegd, maar je hebt wel
+        wat geld verdiend.
       customRewardType: 0
     - title: Chillen vrienden
       moneyReward: -1
@@ -94,6 +101,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 5
       educationReward: 0
+      feedback: Je hebt lekker ontspannen met je vrienden, maar je hebt de kans misgelopen
+        wat te verdienen.
       customRewardType: 0
   - title: Pretpark
     desc: Je vrienden vragen of je naar de Efteling wilt echter moet je zelf de toegangsprijs
@@ -108,6 +117,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 15
       educationReward: 0
+      feedback: Een dagje pretpark is niet goedkoop, maar je hebt wel een hele dag
+        lekker kunnen ontspannen.
       customRewardType: 0
     - title: Thuis blijven
       moneyReward: 0
@@ -116,6 +127,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: -7
       educationReward: 0
+      feedback: Je hebt flink wat geld in je zak gehouden, maar je baalt er wel van
+        dat je niet lekker een dagje eruit bent geweest.
       customRewardType: 0
   - title: Zwerver
     desc: Je loopt in de stad en komt een zwerver tegen. Hij vraagt om geld. Wat
@@ -130,6 +143,7 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0
       educationReward: 0
+      feedback: Je hebt de zwerver een klein bedrag gegeven
       customRewardType: 0
     - title: 1 euro
       moneyReward: -1
@@ -138,6 +152,7 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0
       educationReward: 0
+      feedback: Je hebt de zwerver een klein bedrag gegeven
       customRewardType: 0
     - title: 10 euro
       moneyReward: -10
@@ -146,6 +161,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0
       educationReward: 0
+      feedback: Je hebt aardig wat geld weggegeven, alleen je ouders vinden het maar
+        zonde geld
       customRewardType: 0
     - title: 50 euro
       moneyReward: -50
@@ -154,6 +171,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0
       educationReward: 0
+      feedback: Je hebt aardig wat geld weggegeven, alleen je ouders vinden het maar
+        zonde geld
       customRewardType: 0
     - title: Helemaal niets
       moneyReward: 0
@@ -162,6 +181,7 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0
       educationReward: 0
+      feedback: Je ouders kijken goedkeurend dat je geen geld hebt gegeven.
       customRewardType: 0
   - title: Inzameling
     desc: Een stichting vraagt of je geld wilt doneren voor een goed doel, hoeveel
@@ -176,6 +196,7 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0.1
       educationReward: 0
+      feedback: Je hebt een klein bedrag gegeven, alle beetjes zijn welkom toch?
       customRewardType: 0
     - title: 5 euro
       moneyReward: -5
@@ -184,6 +205,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 0.5
       educationReward: 0
+      feedback: Je hebt een redelijk bedrag gegeven, waarop de collectant tevreden
+        knikt.
       customRewardType: 0
     - title: 10 euro
       moneyReward: -10
@@ -192,6 +215,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 1
       educationReward: 0
+      feedback: Je hebt een redelijk bedrag gegeven, waarop de collectant tevreden
+        knikt.
       customRewardType: 0
     - title: 50 euro
       moneyReward: -50
@@ -200,6 +225,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 5
       educationReward: 0
+      feedback: Alhoewel erg goed bedoeld vraagt je familie zich af of je wel zoveel
+        geld in 1x moet weggeven
       customRewardType: 0
     - title: 100 euro
       moneyReward: -100
@@ -208,6 +235,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: 10
       educationReward: 0
+      feedback: Alhoewel erg goed bedoeld vraagt je familie zich af of je wel zoveel
+        geld in 1x moet weggeven
       customRewardType: 0
     - title: Helemaal niets
       moneyReward: 0
@@ -216,6 +245,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: -5
       educationReward: 0
+      feedback: Je familie vind je maar zuinig dat je geen geld over hebt voor een
+        goed doel
       customRewardType: 0
 --- !u!114 &4842660598323531261
 MonoBehaviour:

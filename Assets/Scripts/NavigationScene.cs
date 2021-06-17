@@ -11,5 +11,6 @@ public enum NavigateScene{
     MinigameQuiz,
     DishWash,
     Score,
-    CleanWindowScene
+    CleanWindowScene,
+    Voetballen
 }

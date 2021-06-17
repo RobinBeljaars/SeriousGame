@@ -63,7 +63,7 @@ public class CharacterCarousel : MonoBehaviour
 
     public void UpdateEnergyChoice(float amount){
         energyChoice=(int)Math.Round(amount,0);
-        energyValue.text="Gewenste speelduur: "+energyChoice;
+        energyValue.text="Gewenste speelduur: "+energyChoice+"\nHoe hoger dit getal, hoe langer het duurt tot je ouder wordt";
     }
     
 

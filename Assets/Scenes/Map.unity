@@ -379,6 +379,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7854469475121643412, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: userFeedbackField
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 7854469475121643412, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: events.Array.data[3].options.Array.data[0].userFeedback
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
 --- !u!1 &250112196
@@ -1215,31 +1223,6 @@ MonoBehaviour:
   educationChange: 0
   feedbackText: Je hebt net dure merkkleding gekocht in de stad
   feedBack: {fileID: 1092362011}
---- !u!1 &1027359036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
-  m_PrefabInstance: {fileID: 2719024353264920860}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1027359037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027359036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minAge: 20
-  moneyChange: 0
-  energyChange: 0
-  happinessChange: 0
-  reputationChange: 0
-  educationChange: 0
-  feedbackText: 
-  feedBack: {fileID: 1092362011}
 --- !u!1001 &1079918640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1711,6 +1694,23 @@ MonoBehaviour:
   educationChange: 0
   feedbackText: Je bent zojuist leker wezen voetballen
   feedBack: {fileID: 1092362011}
+--- !u!1 &1413479689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7854469474978250244, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+  m_PrefabInstance: {fileID: 123394779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1413479693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413479689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058e8ef8477e6234b818755e636077e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1505544896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,6 +2261,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2487826905697319501, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.951294
+      objectReference: {fileID: 0}
     - target: {fileID: 2487826905790615731, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 84
@@ -2401,8 +2405,20 @@ PrefabInstance:
       value: extraSlot
       objectReference: {fileID: 0}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: sceneName
-      value: 6
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
@@ -2424,6 +2440,5 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}

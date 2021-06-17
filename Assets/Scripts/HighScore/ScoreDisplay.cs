@@ -35,7 +35,7 @@ public class ScoreDisplay : MonoBehaviour
                 happiness = item.mood;
             }
         }
-        double score=Math.Round(playerdata.getMoney()+playerdata.getHappiness()+playerdata.GetEducation()+playerdata.GetReputation(),0);
+        double score=Math.Round(playerdata.getMoney()+playerdata.getHappiness()+playerdata.GetEducation()+(playerdata.GetReputation()/2),0);
 
         scoreText.text="€ "+
         Math.Round(playerdata.getMoney(),0)+

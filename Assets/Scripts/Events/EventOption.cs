@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 [System.Serializable]
 public class EventOption
 {
@@ -12,35 +12,47 @@ public class EventOption
     public float itemValueReward = 0;
     public float reputationReward = 0;
     public float educationReward = 0;
+
+    public string feedback;
+    private string feedbackResult;
     
     public Rewards.RewardType customRewardType = Rewards.RewardType.NONE;
 
     public void GainReward(Rewards.RewardType customRewardType = Rewards.RewardType.NONE)
     {
-        if(moneyReward != 0)
+        feedbackResult="";//Reset previousvalue
+        if(moneyReward != 0){
             Rewards.SumMoney(moneyReward);
-
-        if(happinessReward != 0)
-            Rewards.SumHappiness(happinessReward);
-
-        if(energyReward != 0)
+            feedbackResult=feedbackResult+"\nGeld: € "+moneyReward;
+        }
+        if(energyReward != 0){
             Rewards.SumEnergy(energyReward);
-
-        if(itemValueReward != 0)
+            feedbackResult=feedbackResult+"\nEnergie: "+energyReward;
+        }
+        if(happinessReward != 0){
+            Rewards.SumHappiness(happinessReward);
+            feedbackResult=feedbackResult+"\nStemming: "+happinessReward;
+        }
+        if(itemValueReward != 0){
             Rewards.SumItemValue(itemValueReward);
-
-        if (reputationReward != 0)
+            feedbackResult=feedbackResult+"\n"+itemValueReward;
+        }
+        if (reputationReward != 0){
             Rewards.SumReputation(reputationReward);
-
-        if (educationReward != 0)
+            feedbackResult=feedbackResult+"\nReputatie: "+reputationReward;
+        }
+        if (educationReward != 0){
             Rewards.SumEducation(educationReward);
-
+            feedbackResult=feedbackResult+"\nScholing: "+educationReward;
+        }
         //Custom event
         Rewards.GainReward(customRewardType);
         Game.currentGame.PlayerData.IncrementEventsExperiencedThisDay();
         Game.currentGame.SetEventNotActive();
         SaveLoadGame.Save();
+    }
 
-
+    public string GetFeedback(){
+        return feedback+feedbackResult;
     }
 }
