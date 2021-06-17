@@ -165,10 +165,16 @@ public class SoccerTeam : MonoBehaviour
         {
             PlayerBase pb = item.GetComponent<PlayerBase>();
             foreach(var player in players){
-                player.GetComponent<PlayerBase>().warpHome();
+                PlayerBase bap = player.GetComponent<PlayerBase>();
+                if(bap.Role() != "GoalKeeper"){
+                    bap.warpHome();
+                }
             }
             foreach(var opponent in opponentTeam.players){
-                opponent.GetComponent<PlayerBase>().warpHome();
+                PlayerBase bap = opponent.GetComponent<PlayerBase>();
+                if(bap.Role() != "GoalKeeper"){
+                    bap.warpHome();
+                }
             }
             if (pb.Role() != "GoalKeeper")
             {
