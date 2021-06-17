@@ -629,6 +629,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctAnswerScreen: {fileID: 1689255952}
   questionText: {fileID: 250233483}
+  answertexts:
+  - {fileID: 952651915}
+  - {fileID: 1581895543}
+  - {fileID: 751150550}
+  - {fileID: 1002396692}
   answer1Text: {fileID: 952651915}
   answer2Text: {fileID: 1581895543}
   answer3Text: {fileID: 751150550}
@@ -2161,6 +2166,9 @@ MonoBehaviour:
   mode: 0
   sceneName: 0
   ignoreUIConstraint: 1
+  minAgeToAllowSwitch: 0
+  minEnergytoAllowSwitch: 0
+  feedBack: {fileID: 0}
   UIToToggle: []
 --- !u!114 &1758750604
 MonoBehaviour:

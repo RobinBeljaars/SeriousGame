@@ -1804,7 +1804,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440218867}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7284,6 +7284,7 @@ MonoBehaviour:
   - {fileID: 1790706744}
   - {fileID: 652090381}
   - {fileID: 1879863481}
+  pg: {fileID: 1545746987}
   minDistance: 1.5
 --- !u!1 &1545746984
 GameObject:
