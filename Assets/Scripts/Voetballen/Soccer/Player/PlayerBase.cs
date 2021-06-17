@@ -9,6 +9,8 @@ public class PlayerBase : MovingEntity_CH4
     public Vector3 myMaxForce = new Vector3(10f, 0 , 10f);
     [SerializeField]
     private string playerRole;
+    
+    public Vector3 staticHomeRegion;
     public Vector3 homeRegion;
     [SerializeField]
     private Steering_CH4 steering;
@@ -32,6 +34,7 @@ public class PlayerBase : MovingEntity_CH4
             else
                 playerRole = "Defender";
         }
+        staticHomeRegion = gameObject.transform.position;
         homeRegion = gameObject.transform.position;
         steering = GetComponent<Steering_CH4>();
 
@@ -116,7 +119,7 @@ public class PlayerBase : MovingEntity_CH4
     }
 
     public void warpHome(){
-        transform.position = homeRegion;
+        transform.position = staticHomeRegion;
     }
 
     public void SetHomeRegion(Vector3 region)
