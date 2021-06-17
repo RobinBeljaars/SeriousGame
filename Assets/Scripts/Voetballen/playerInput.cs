@@ -12,7 +12,7 @@ public class playerInput : MonoBehaviour
     private void Update()
     {
         if(Input.GetKeyUp("e")){
-            player.TogglePassLock();
+            // player.TogglePassLock();
         } else if(Input.GetKeyUp("r")){
             var team = GameObject.Find("RedTeam").GetComponent<SoccerTeam>();
             team.Reload();

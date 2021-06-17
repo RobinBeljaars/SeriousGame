@@ -3317,10 +3317,7 @@ MonoBehaviour:
 
     R - Reset
 
-    E - Overspelen aan/uit
-
-    Spatie
-    - Schieten'
+    Spatie - Schieten'
 --- !u!222 &601900582
 CanvasRenderer:
   m_ObjectHideFlags: 0
