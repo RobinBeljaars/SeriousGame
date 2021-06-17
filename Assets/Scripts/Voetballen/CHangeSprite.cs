@@ -8,9 +8,9 @@ public class CHangeSprite : MonoBehaviour
     void Start()
     {
         var render = gameObject.GetComponent<SpriteRenderer>();
-        // if(Game.currentGame == null){
-        //     Game.currentGame = new Game();
-        // }
+        if(Game.currentGame == null){
+            Game.currentGame = new Game();
+        }
         if (Game.currentGame.PlayerData.getAvatar() != null)
         {
             render.sprite = Game.currentGame.PlayerData.getAvatar();

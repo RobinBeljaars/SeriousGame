@@ -9,6 +9,7 @@ TagManager:
   - Room
   - Map
   - Cleanliness
+  - Ball
   layers:
   - Default
   - TransparentFX

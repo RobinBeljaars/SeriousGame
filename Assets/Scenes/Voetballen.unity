@@ -428,6 +428,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   score: 0
+--- !u!1 &81770144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 81770145}
+  - component: {fileID: 81770146}
+  - component: {fileID: 81770147}
+  m_Layer: 0
+  m_Name: corner3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &81770145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81770144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15, y: 0, z: -8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1288993461}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &81770146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81770144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 2, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &81770147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81770144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8c4e69f5363a84dbc4ab28ed7c991c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 157020631}
+  force: 1
 --- !u!1 &88229554
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +935,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142113962}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &157020630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157020631}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157020631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157020630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1288993461}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &174791233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,7 +2203,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!114 &484139639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2763,7 +2852,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!114 &530776585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,7 +3349,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &653415091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,7 +4220,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
 --- !u!1 &973239346
 GameObject:
   m_ObjectHideFlags: 0
@@ -4222,6 +4311,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   score: 0
+--- !u!1 &992451149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992451150}
+  - component: {fileID: 992451151}
+  - component: {fileID: 992451152}
+  m_Layer: 0
+  m_Name: corner4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992451150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992451149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: -8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1288993461}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &992451151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992451149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 2, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &992451152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992451149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8c4e69f5363a84dbc4ab28ed7c991c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 157020631}
+  force: 1
 --- !u!1 &1004039048
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,7 +4571,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!114 &1032501895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5172,6 +5320,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   score: 0
+--- !u!1 &1174936615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174936616}
+  - component: {fileID: 1174936617}
+  - component: {fileID: 1174936618}
+  m_Layer: 0
+  m_Name: corner2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1174936616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174936615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1288993461}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1174936617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174936615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 2, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1174936618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174936615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8c4e69f5363a84dbc4ab28ed7c991c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 157020631}
+  force: 1
 --- !u!1 &1178084016
 GameObject:
   m_ObjectHideFlags: 0
@@ -5643,6 +5850,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   score: 0
+--- !u!1 &1288993460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1288993461}
+  m_Layer: 0
+  m_Name: Corners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288993461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288993460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1599031476}
+  - {fileID: 1174936616}
+  - {fileID: 81770145}
+  - {fileID: 992451150}
+  - {fileID: 157020631}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1304786506
 GameObject:
   m_ObjectHideFlags: 0
@@ -6579,6 +6821,7 @@ GameObject:
   - component: {fileID: 1543247410}
   - component: {fileID: 1543247409}
   - component: {fileID: 1543247408}
+  - component: {fileID: 1543247417}
   m_Layer: 0
   m_Name: PlayerState
   m_TagString: Untagged
@@ -6696,6 +6939,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1543247417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543247407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ac6f3ed737f5e4bb1b23c7c4ee79bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redTeam:
+  - {fileID: 62334780}
+  - {fileID: 1032501891}
+  - {fileID: 530776578}
+  - {fileID: 1682608649}
+  - {fileID: 484139632}
+  blueTeam:
+  - {fileID: 948068988}
+  - {fileID: 2058065608}
+  - {fileID: 1790706744}
+  - {fileID: 652090381}
+  - {fileID: 1879863481}
+  minDistance: 1.5
 --- !u!1 &1545746984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6778,6 +7046,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 0
   sceneName: 0
+  ignoreUIConstraint: 0
+  minAgeToAllowSwitch: 0
+  minEnergytoAllowSwitch: 0
+  feedBack: {fileID: 0}
   UIToToggle: []
 --- !u!1 &1546120519
 GameObject:
@@ -6869,6 +7141,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pos: {x: 0, y: 0, z: 0}
   score: 0
+--- !u!1 &1599031475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599031476}
+  - component: {fileID: 1599031477}
+  - component: {fileID: 1599031478}
+  m_Layer: 0
+  m_Name: corner1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1599031476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599031475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15, y: 0, z: 8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1288993461}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1599031477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599031475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 2, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1599031478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599031475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8c4e69f5363a84dbc4ab28ed7c991c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 157020631}
+  force: 1
 --- !u!1 &1602683939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,7 +8280,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &1793435353
 GameObject:
   m_ObjectHideFlags: 0
@@ -8204,7 +8535,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &1897563523
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,7 +8897,7 @@ GameObject:
   - component: {fileID: 2021273026}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8849,7 +9180,7 @@ MonoBehaviour:
   soccerBall: {fileID: 2021273026}
   distToBall: 0
   state: 
-  Player: 0
+  Player: 1
 --- !u!1 &2060834474
 GameObject:
   m_ObjectHideFlags: 0
@@ -8862,6 +9193,7 @@ GameObject:
   - component: {fileID: 2060834478}
   - component: {fileID: 2060834477}
   - component: {fileID: 2060834476}
+  - component: {fileID: 2060834479}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -8946,6 +9278,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060834474}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!210 &2060834479
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060834474}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &2062294178
 GameObject:
   m_ObjectHideFlags: 0
@@ -9047,6 +9390,7 @@ GameObject:
   - component: {fileID: 2080208414}
   - component: {fileID: 2080208417}
   - component: {fileID: 2080208416}
+  - component: {fileID: 2080208415}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -9068,6 +9412,17 @@ Transform:
   m_Father: {fileID: 337807943}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &2080208415
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080208413}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
 --- !u!23 &2080208416
 MeshRenderer:
   m_ObjectHideFlags: 0
