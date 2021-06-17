@@ -1861,6 +1861,7 @@ MonoBehaviour:
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
   pause: {fileID: 1545746987}
+  endCondition: 2
 --- !u!1 &441368831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,13 +3313,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Pijltjes - bewegen
+  m_Text: 'Pijltjes - Bewegen
 
-    R - reset locations
+    R - Reset
 
-    E - enable/disable pass
+    E - Overspelen aan/uit
 
-'
+    Spatie
+    - Schieten'
 --- !u!222 &601900582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7284,6 +7286,7 @@ MonoBehaviour:
   - {fileID: 1790706744}
   - {fileID: 652090381}
   - {fileID: 1879863481}
+  pg: {fileID: 1545746987}
   minDistance: 1.5
 --- !u!1 &1545746984
 GameObject:
@@ -8281,6 +8284,7 @@ MonoBehaviour:
   redScore: {fileID: 460314011}
   blueScore: {fileID: 1433710498}
   pause: {fileID: 1545746987}
+  endCondition: 2
 --- !u!1 &1705997504
 GameObject:
   m_ObjectHideFlags: 0
