@@ -6,6 +6,7 @@ public class playerInput : MonoBehaviour
 {
     public CylinderController cylinderController;
     public FieldPlayer player;
+    public PlayerBase bsPlayer;
     public pauseGame pause;
 
     private void Update()
@@ -18,6 +19,10 @@ public class playerInput : MonoBehaviour
             team.opponentTeam.Reload();
         } else if(Input.GetKeyUp(KeyCode.Escape)){
             pause.Pause();
+        } else if(Input.GetKeyUp("q")){
+            if(bsPlayer.DistToBall() < 1f){
+            player.GetFSM().ChangeState(KickBall.instance);
+            }
         }
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");

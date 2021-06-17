@@ -7332,6 +7332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cylinderController: {fileID: 1682608652}
   player: {fileID: 1682608655}
+  bsPlayer: {fileID: 1682608656}
   pause: {fileID: 1545746987}
 --- !u!114 &1545746987
 MonoBehaviour:
