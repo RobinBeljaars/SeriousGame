@@ -248,6 +248,322 @@ MonoBehaviour:
       feedback: Je familie vind je maar zuinig dat je geen geld over hebt voor een
         goed doel
       customRewardType: 0
+  - title: IJscoman
+    desc: De ijscoman komt langs in de straat. Hij verkoopt de beruchte lekker Italiaans
+      ijsjes. Wat ga je bestellen?
+    minAge: 12
+    maxAge: 15
+    options:
+    - title: Lekker ijshoorntje bestellen
+      moneyReward: -5
+      happinessReward: 10
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0.3
+      educationReward: 0
+      feedback: Een heerlijk ijsje op zijn tijd moet kunnen.
+      customRewardType: 0
+    - title: Deluxe ijshoorntje bestellen
+      moneyReward: -12
+      happinessReward: 12
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0.5
+      educationReward: 0
+      feedback: Je hebt een erg duur ijsje gekocht, dit geld had je wellicht beter
+        kunnen besteden.
+      customRewardType: 0
+    - title: Niets
+      moneyReward: 0
+      happinessReward: -1
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: 0
+      feedback: Je ouders kijken goedkeurend dat je geen geld hebt gegeven.
+      customRewardType: 0
+  - title: Snoepjes stelen
+    desc: Je bent op bezoek bij het huis van een vriend van je, hij is even weg en
+      er staat een grote snoeppot voor je op het aanrecht. Wat doe je?
+    minAge: 12
+    maxAge: 14
+    options:
+    - title: 1 snoepje pakken
+      moneyReward: 0
+      happinessReward: 1
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -10
+      educationReward: 0
+      feedback: Je hebt een stiekem een snoepje gepakt maar toch word je gesnapt.
+        Dat vond je vriend niet zo leuk
+      customRewardType: 0
+    - title: Hele pot stelen
+      moneyReward: 0
+      happinessReward: 10
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -100
+      educationReward: 0
+      feedback: Je hebt zojuist de hele snoeppot gestolen. Je bent gesnapt op dit
+        uiterst genante momentje en dat zal je veel reputatie kosten.
+      customRewardType: 0
+    - title: Niets
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 1
+      educationReward: 0
+      feedback: Goed zo, stelen is ten slotte strafbaar
+      customRewardType: 0
+  - title: Slapeloze nacht
+    desc: Gisteren nacht heb je erg slecht geslapen. Je hebt vandaag school, je bent
+      bang dat je te moe zal zijn voor de hele dag.
+    minAge: 14
+    maxAge: 18
+    options:
+    - title: Toch gaan
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: 30
+      feedback: 'Goed zo, naar school gaan is essentieel voor je toekomst. '
+      customRewardType: 0
+    - title: Thuis blijven
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: -30
+      feedback: Misschien was dit toch niet zo'n goed idee. Het zal moeilijker voor
+        je worden om de komende toetsen te halen.
+      customRewardType: 0
+  - title: Scooter
+    desc: Verschillende mensen in je vriendenkring hebben een scooter aangeschafd
+      om mobieler te zijn. Hierbij komt ook een scooter rijbewijs die je moet bekostigen
+      maar je zal mobieler zijn.
+    minAge: 16
+    maxAge: 18
+    options:
+    - title: Scooter kopen
+      moneyReward: -150
+      happinessReward: 20
+      energyReward: -10
+      itemValueReward: 150
+      reputationReward: 20
+      educationReward: 0
+      feedback: Scooters zijn erg duur maar je bent nu wel mobieler. Probeer op je
+        geld te letten na zo'n grote aankoop.
+      customRewardType: 0
+    - title: Fiets blijven gebruiker
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -5
+      educationReward: 0
+      feedback: Dit is een wijze keuze want scooters zijn vrij duur op je leeftijdscategorie.
+      customRewardType: 0
+  - title: Fissa
+    desc: Je bent jarig, wil je een feest geven?
+    minAge: 12
+    maxAge: 18
+    options:
+    - title: Feest geven
+      moneyReward: -20
+      happinessReward: 40
+      energyReward: -10
+      itemValueReward: 150
+      reputationReward: 20
+      educationReward: 0
+      feedback: Je hebt een feestje gevierd, het kosten een beetje geld om het te
+        organiseren maar het was erg gezellig.
+      customRewardType: 0
+    - title: Uitbundig feest geven
+      moneyReward: -60
+      happinessReward: 50
+      energyReward: -15
+      itemValueReward: 0
+      reputationReward: 40
+      educationReward: 0
+      feedback: Het feestje was echt fantastisch maar wel erg duur. Dit was misschien
+        niet zo'n goed idee.
+      customRewardType: 0
+    - title: Niets
+      moneyReward: 0
+      happinessReward: -10
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -10
+      educationReward: 0
+      feedback: Een feest geven is niet altijd erg als het maar niet te veel geld
+        gaat kosten.
+      customRewardType: 0
+  - title: Studeren of feesten
+    desc: 1 van je vrienden vraagt of je mee wilt naar zijn verjaardagsfeestje maar
+      je hebt morgen een toets. Wat doe je?
+    minAge: 13
+    maxAge: 18
+    options:
+    - title: Naar een feestje gaan
+      moneyReward: 0
+      happinessReward: 10
+      energyReward: -20
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: -15
+      feedback: Het feestje was redelijk leuk maar je school lijdt eronder. Je bent
+        tevens na het feestje best moe.
+      customRewardType: 0
+    - title: Studeren
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: -10
+      itemValueReward: 0
+      reputationReward: -5
+      educationReward: 10
+      feedback: Soms moet je iets opgeven voor een groter doel; de toekomst.
+      customRewardType: 0
+  - title: Whatsappje
+    desc: Op school in de pauze krijg je ineens een Whatsappje van je moeder of je
+      even 50 euro wilt overstorten want dat heeft ze even nodig om iets af te betalen.
+      Ze zal het gelijk terugstorten.
+    minAge: 15
+    maxAge: 18
+    options:
+    - title: 50 euro overstorten
+      moneyReward: -50
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: 0
+      feedback: Helaas ben je opgelicht. Probeer eerst altijd fysiek te bespreken
+        als iemand geld nodig heeft.
+      customRewardType: 0
+    - title: Negeren
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: 0
+      feedback: Goed zo, bespreek het uitgeven van geld altijd fysiek. Laat oplichters
+        je niet foppen.
+      customRewardType: 0
+  - title: Fiets bekeuring
+    desc: 'Je kwam aan op school vanochtend en je hebt een fikse boete van 80 euro
+      gekregen omdat 1 van je fietslampjes niet goed functioneerde. Gelukkig willen
+      je ouders mee betalen. '
+    minAge: 12
+    maxAge: 16
+    options:
+    - title: Boete betalen
+      moneyReward: -5
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: 0
+      feedback: Let op onverwachte kosten, hou dus altijd wat geld over.
+      customRewardType: 0
+  - title: Frietje in de stad
+    desc: Je bent in de stad met je vrienden en ze nemen wat eten uit de muur. Wat
+      bestel jij?
+    minAge: 14
+    maxAge: 18
+    options:
+    - title: Frietje
+      moneyReward: -4
+      happinessReward: 5
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 10
+      educationReward: 0
+      feedback: Lekker voor een acceptabele prijs!
+      customRewardType: 0
+    - title: Frietje met snack
+      moneyReward: -7
+      happinessReward: 10
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 10
+      educationReward: 0
+      feedback: Extra lekker maar wel extra duur.
+      customRewardType: 0
+    - title: Frietje met 2 snacks, ijsje, snoepjes, koekjes & meer
+      moneyReward: -30
+      happinessReward: 20
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 10
+      educationReward: 0
+      feedback: Dat was heel onnodig om zoveel in te slaan. Bovendien kan je het
+        niet eens allemaal op.
+      customRewardType: 0
+  - title: Geld lenen
+    desc: Een 'goede' vriend vraagt aan jou of je 5 euro kan lenen. Wat doe je?
+    minAge: 12
+    maxAge: 18
+    options:
+    - title: 5 euro uitlenen
+      moneyReward: -5
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 0
+      educationReward: 0
+      feedback: Uiteindelijk na vele pogingen geef je het op want hij heeft je nog
+        steeds niet terug betaald.
+      customRewardType: 0
+    - title: Niets uitlenen
+      moneyReward: 0
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -1
+      educationReward: 0
+      feedback: Je vriend vindt het niet leuk maar het is begrijpelijk.
+      customRewardType: 0
+  - title: Cadeautje kopen
+    desc: Het is valentijnsdag, je partner koopt een klein cadeautje voor je. Wat
+      doe jij?
+    minAge: 16
+    maxAge: 18
+    options:
+    - title: Goedkoop cadeau
+      moneyReward: -3
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 10
+      educationReward: 0
+      feedback: Leuk cadeautje voor een goedkope prijs.
+      customRewardType: 0
+    - title: Duur cadeau
+      moneyReward: -20
+      happinessReward: 0
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 15
+      educationReward: 0
+      feedback: Dit was wel erg duur en onnodig. Let op wat je koopt!
+      customRewardType: 0
+    - title: Niets kopen
+      moneyReward: 0
+      happinessReward: -50
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -50
+      educationReward: 0
+      feedback: 'Je hebt besloten om niets te komen maar dit kwam erg onbeschofd
+        over. Uiteindelijk hebben jullie ruzie gekregen en is het uit. Maar van de
+        zonnige kant heb je wel wat geld bespaard. '
+      customRewardType: 0
 --- !u!114 &4842660598323531261
 MonoBehaviour:
   m_ObjectHideFlags: 0
