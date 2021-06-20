@@ -254,7 +254,7 @@ MonoBehaviour:
     minAge: 12
     maxAge: 15
     options:
-    - title: Lekker ijshoorntje bestellen
+    - title: Lekker ijshoorntje
       moneyReward: -5
       happinessReward: 10
       energyReward: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
       educationReward: 0
       feedback: Een heerlijk ijsje op zijn tijd moet kunnen.
       customRewardType: 0
-    - title: Deluxe ijshoorntje bestellen
+    - title: Deluxe ijshoorntje
       moneyReward: -12
       happinessReward: 12
       energyReward: 0
