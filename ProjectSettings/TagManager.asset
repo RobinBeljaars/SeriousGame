@@ -11,7 +11,8 @@ TagManager:
   - Obstacle
   - Cleanliness
   - Ball
-
+  - Alert
+  - Werk
   layers:
   - Default
   - TransparentFX
@@ -46,8 +47,8 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG
-    uniqueID: 2014975969
+  - name: Backg
+    uniqueID: 2066595047
     locked: 0
   - name: Default
     uniqueID: 0

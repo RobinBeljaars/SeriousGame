@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CleanWindowScene.unity
     guid: 7faf31e72fdf66a41a22d4cd8e9e532f
+  - enabled: 1
+    path: Assets/Pizza/Scenes/Pizza.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

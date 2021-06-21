@@ -971,8 +971,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -671950439
-  m_SortingLayer: 0
+  m_SortingLayerID: 2066595047
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bade6a4b2d1d64a4d8d8c77f1bf02907, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1099,6 +1099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496176870}
   - component: {fileID: 1496176871}
+  - component: {fileID: 1496176872}
   m_Layer: 5
   m_Name: Game Won
   m_TagString: Untagged
@@ -1139,9 +1140,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52749741e7aa1b84b9447607747cadb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navigationScript: {fileID: 0}
-  moneyReward: 15
-  energyCost: -5
+  navigationScript: {fileID: 1496176872}
+  moneyReward: 18
+  energyCost: -7
+--- !u!114 &1496176872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496176869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ca2d5f2ebd567429e40cb5978c3a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  sceneName: 0
+  ignoreUIConstraint: 0
+  minAgeToAllowSwitch: 0
+  minEnergytoAllowSwitch: 0
+  feedBack: {fileID: 0}
+  UIToToggle: []
 --- !u!1 &1542791634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,8 +1298,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -671950439
-  m_SortingLayer: 0
+  m_SortingLayerID: 2066595047
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bade6a4b2d1d64a4d8d8c77f1bf02907, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1762,8 +1782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navigationScript: {fileID: 2106156677}
-  moneyReward: 5
-  energyCost: -5
+  moneyReward: 0
+  energyCost: -7
 --- !u!114 &2106156677
 MonoBehaviour:
   m_ObjectHideFlags: 0

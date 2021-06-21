@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
         target = new Vector2(transform.position.x, transform.position.y);
         start = new Vector2(transform.position.x, transform.position.y);
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        Time.timeScale=0;
     }
     private void Update()
     {
@@ -31,10 +32,12 @@ public class PlayerController : MonoBehaviour
         {
             if (ins.activeSelf)
             {
+                Time.timeScale=1;
                 ins.SetActive(false);
             }
             else
             {
+                Time.timeScale=0;
                 ins.SetActive(true);
             }
         }

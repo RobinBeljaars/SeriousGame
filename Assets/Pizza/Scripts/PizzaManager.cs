@@ -11,11 +11,11 @@ public class PizzaManager : MonoBehaviour
     public GameObject winPanel;
     private void Start()
     {
-        scoreDisplay.text = "Score: " + score.ToString();
+        scoreDisplay.text = "Score: " + score.ToString()+"/"+scoreToWin;
     }
     void SetCountText()
     {
-        scoreDisplay.text = "Score: " + score.ToString();
+        scoreDisplay.text = "Score: " + score.ToString()+"/"+scoreToWin;;
         if (score >= scoreToWin)
         {
             winPanel.SetActive(true);
