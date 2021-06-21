@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PizzaRestart : MonoBehaviour
 {
-
     public NavigationScript navigationScript;
+
 
     public float moneyReward;
     public float energyCost;
@@ -21,10 +21,10 @@ public class PizzaRestart : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            Time.timeScale = 1;
             Game.currentGame.PlayerData.AlterMoney(moneyReward);
             Game.currentGame.PlayerData.AlterEnergy(energyCost);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1;
+            navigationScript.SwitchScreen();
         }
     }
 }

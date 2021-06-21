@@ -25,6 +25,21 @@ public class PlayerController : MonoBehaviour
         start = new Vector2(transform.position.x, transform.position.y);
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (ins.activeSelf)
+            {
+                ins.SetActive(false);
+            }
+            else
+            {
+                ins.SetActive(true);
+            }
+        }
+
+    }
     void FixedUpdate()
     {
 
@@ -37,17 +52,6 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = 0;
         }
         transform.position = Vector2.MoveTowards(transform.position, target, speed);
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (ins.activeSelf)
-            {
-                ins.SetActive(false);
-            }
-            else
-            {
-                ins.SetActive(true);
-            }
-        }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager : MonoBehaviour
+public class PizzaManager : MonoBehaviour
 {
     public int score;
     public int scoreToWin;
