@@ -275,16 +275,17 @@ MonoBehaviour:
       customRewardType: 0
     - title: Niets
       moneyReward: 0
-      happinessReward: -1
+      happinessReward: -2
       energyReward: 0
       itemValueReward: 0
-      reputationReward: 0
+      reputationReward: -1
       educationReward: 0
-      feedback: Je ouders kijken goedkeurend dat je geen geld hebt gegeven.
+      feedback: Je ouders kijken goedkeurend dat je geen geld hebt gegeven. Maar
+        je vrienden vinden je maar 'saai'
       customRewardType: 0
   - title: Snoepjes stelen
-    desc: Je bent op bezoek bij het huis van een vriend van je, hij is even weg en
-      er staat een grote snoeppot voor je op het aanrecht. Wat doe je?
+    desc: Je bent op bezoek bij een vriend van je, hij is even weg en er staat een
+      snoeppot voor je op het aanrecht. Wat doe je?
     minAge: 12
     maxAge: 14
     options:
@@ -295,8 +296,8 @@ MonoBehaviour:
       itemValueReward: 0
       reputationReward: -10
       educationReward: 0
-      feedback: Je hebt een stiekem een snoepje gepakt maar toch word je gesnapt.
-        Dat vond je vriend niet zo leuk
+      feedback: Je hebt stiekem een snoepje gepakt maar toch word je gesnapt. Dat
+        vond je vriend niet zo leuk
       customRewardType: 0
     - title: Hele pot stelen
       moneyReward: 0
@@ -326,35 +327,35 @@ MonoBehaviour:
     - title: Toch gaan
       moneyReward: 0
       happinessReward: 0
-      energyReward: 0
+      energyReward: -10
       itemValueReward: 0
       reputationReward: 0
-      educationReward: 30
+      educationReward: 7
       feedback: 'Goed zo, naar school gaan is essentieel voor je toekomst. '
       customRewardType: 0
     - title: Thuis blijven
       moneyReward: 0
       happinessReward: 0
-      energyReward: 0
+      energyReward: -10
       itemValueReward: 0
       reputationReward: 0
-      educationReward: -30
+      educationReward: -7
       feedback: Misschien was dit toch niet zo'n goed idee. Het zal moeilijker voor
         je worden om de komende toetsen te halen.
       customRewardType: 0
   - title: Scooter
     desc: Verschillende mensen in je vriendenkring hebben een scooter aangeschafd
-      om mobieler te zijn. Hierbij komt ook een scooter rijbewijs die je moet bekostigen
+      om mobieler te zijn. Hierbij komt ook een scooterrijbewijs die je moet bekostigen
       maar je zal mobieler zijn.
     minAge: 16
     maxAge: 18
     options:
     - title: Scooter kopen
       moneyReward: -150
-      happinessReward: 20
-      energyReward: -10
-      itemValueReward: 150
-      reputationReward: 20
+      happinessReward: 30
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: 40
       educationReward: 0
       feedback: Scooters zijn erg duur maar je bent nu wel mobieler. Probeer op je
         geld te letten na zo'n grote aankoop.
@@ -362,7 +363,7 @@ MonoBehaviour:
     - title: Fiets blijven gebruiker
       moneyReward: 0
       happinessReward: 0
-      energyReward: 0
+      energyReward: -20
       itemValueReward: 0
       reputationReward: -5
       educationReward: 0
@@ -375,9 +376,9 @@ MonoBehaviour:
     options:
     - title: Feest geven
       moneyReward: -20
-      happinessReward: 40
+      happinessReward: 30
       energyReward: -10
-      itemValueReward: 150
+      itemValueReward: 0
       reputationReward: 20
       educationReward: 0
       feedback: Je hebt een feestje gevierd, het kosten een beetje geld om het te
@@ -385,10 +386,10 @@ MonoBehaviour:
       customRewardType: 0
     - title: Uitbundig feest geven
       moneyReward: -60
-      happinessReward: 50
+      happinessReward: 30
       energyReward: -15
       itemValueReward: 0
-      reputationReward: 40
+      reputationReward: 30
       educationReward: 0
       feedback: Het feestje was echt fantastisch maar wel erg duur. Dit was misschien
         niet zo'n goed idee.
@@ -415,7 +416,7 @@ MonoBehaviour:
       energyReward: -20
       itemValueReward: 0
       reputationReward: 0
-      educationReward: -15
+      educationReward: -10
       feedback: Het feestje was redelijk leuk maar je school lijdt eronder. Je bent
         tevens na het feestje best moe.
       customRewardType: 0
@@ -425,7 +426,7 @@ MonoBehaviour:
       energyReward: -10
       itemValueReward: 0
       reputationReward: -5
-      educationReward: 10
+      educationReward: 8
       feedback: Soms moet je iets opgeven voor een groter doel; de toekomst.
       customRewardType: 0
   - title: Whatsappje
@@ -437,17 +438,17 @@ MonoBehaviour:
     options:
     - title: 50 euro overstorten
       moneyReward: -50
-      happinessReward: 0
+      happinessReward: -5
       energyReward: 0
       itemValueReward: 0
-      reputationReward: 0
+      reputationReward: -5
       educationReward: 0
       feedback: Helaas ben je opgelicht. Probeer eerst altijd fysiek te bespreken
         als iemand geld nodig heeft.
       customRewardType: 0
     - title: Negeren
       moneyReward: 0
-      happinessReward: 0
+      happinessReward: 1
       energyReward: 0
       itemValueReward: 0
       reputationReward: 0
@@ -495,15 +496,26 @@ MonoBehaviour:
       educationReward: 0
       feedback: Extra lekker maar wel extra duur.
       customRewardType: 0
-    - title: Frietje met 2 snacks, ijsje, snoepjes, koekjes & meer
+    - title: Frietje met 3 snacks en ijs
       moneyReward: -30
-      happinessReward: 20
+      happinessReward: 10
       energyReward: 0
       itemValueReward: 0
       reputationReward: 10
       educationReward: 0
       feedback: Dat was heel onnodig om zoveel in te slaan. Bovendien kan je het
         niet eens allemaal op.
+      customRewardType: 0
+    - title: Niks
+      moneyReward: 0
+      happinessReward: -7
+      energyReward: 0
+      itemValueReward: 0
+      reputationReward: -15
+      educationReward: 0
+      feedback: Geld sparen is begrijpelijk. Maar als je hele vriendengroep iets
+        neemt kun je gerust zelf ook iets goedkoops nemen. Je vrienden nemen de volgende
+        wel iemand mee naar de stad.
       customRewardType: 0
   - title: Geld lenen
     desc: Een 'goede' vriend vraagt aan jou of je 5 euro kan lenen. Wat doe je?

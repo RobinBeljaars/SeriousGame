@@ -2052,14 +2052,25 @@ PrefabInstance:
     - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
       propertyPath: footBallScene
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1251371095}
     - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
       propertyPath: scenarioTextBox
       value: 
       objectReference: {fileID: 1092362011}
+    - target: {fileID: 8884906519676800508, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: sceneName
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906519676800508, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906519676800508, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8884906519281717205, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
-    - {fileID: 8884906519676800508, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
 --- !u!1 &1251371089 stripped
 GameObject:
@@ -2086,31 +2097,17 @@ MonoBehaviour:
   educationChange: 0
   feedbackText: Je hebt lekker Fifa gespeeld bij Lisa thuis
   feedBack: {fileID: 1092362011}
---- !u!1 &1251371091 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8884906519676800511, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+--- !u!114 &1251371095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8884906519676800508, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
   m_PrefabInstance: {fileID: 1251371088}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1251371092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251371091}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Script: {fileID: 11500000, guid: 73ca2d5f2ebd567429e40cb5978c3a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAge: 12
-  moneyChange: 0
-  energyChange: -8
-  happinessChange: 5
-  reputationChange: 4
-  educationChange: 0
-  feedbackText: Je bent zojuist leker wezen voetballen
-  feedBack: {fileID: 1092362011}
 --- !u!224 &1324093145 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2719024352862074578, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
@@ -2715,15 +2712,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2487826905697319501, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.9512901
+      value: 3.951294
       objectReference: {fileID: 0}
     - target: {fileID: 2487826905790615731, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 84.000046
+      value: 84.00006
       objectReference: {fileID: 0}
     - target: {fileID: 2487826906286074882, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 205.00003
+      value: 205.00006
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 685268372, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
