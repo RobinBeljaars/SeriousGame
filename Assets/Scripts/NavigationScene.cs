@@ -12,5 +12,6 @@ public enum NavigateScene{
     DishWash,
     Score,
     CleanWindowScene,
-    Voetballen
+    Voetballen,
+    Pizza
 }
