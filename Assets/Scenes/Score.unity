@@ -1076,6 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 0
   sceneName: 3
+  ignoreUIConstraint: 1
   UIToToggle: []
 --- !u!114 &388503783973937038
 MonoBehaviour:

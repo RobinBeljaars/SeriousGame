@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EventManager : MonoBehaviour
 {
@@ -11,8 +12,10 @@ public class EventManager : MonoBehaviour
     public GameObject optionObject;
     public GameObject horizontalOptionList;
     public GameObject verticalOptionList;
+    public Text userFeedbackField;
     public List<Event> events = new List<Event>();
     private int currentEventId = -1;
+    
 
     private void Update()
     {
@@ -61,6 +64,7 @@ public class EventManager : MonoBehaviour
 
     private void SetEventData(Event randomEvent)
     {
+        Game.currentGame.SetEventoActive();
         currentEventId = events.IndexOf(randomEvent);
         titleText.text = randomEvent.title;
         descText.text = randomEvent.desc;
@@ -111,8 +115,11 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public void EndEvent()
+    public void EndEvent(string feedback)
     {
+        //Set Feedback
+        userFeedbackField.text=feedback;
+
         window.SetActive(false);
     }
 }

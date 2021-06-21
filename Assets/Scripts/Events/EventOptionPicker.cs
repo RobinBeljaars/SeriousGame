@@ -11,6 +11,6 @@ public class EventOptionPicker : MonoBehaviour
         AudioController.Instance.PlayButtonPressedSound();
         option.GainReward();
         GetComponent<ToolTipTrigger>().OnPointerExit(null);
-        FindObjectOfType<EventManager>().EndEvent();
+        FindObjectOfType<EventManager>().EndEvent(option.GetFeedback());
     }
 }

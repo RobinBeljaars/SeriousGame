@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ScoreDisplay : MonoBehaviour
 
@@ -34,10 +35,10 @@ public class ScoreDisplay : MonoBehaviour
                 happiness = item.mood;
             }
         }
-        float score=playerdata.getMoney()+playerdata.getHappiness()+playerdata.GetEducation()+playerdata.GetReputation();
+        double score=Math.Round(playerdata.getMoney()+playerdata.getHappiness()+playerdata.GetEducation()+(playerdata.GetReputation()/2),0);
 
         scoreText.text="€ "+
-        playerdata.getMoney().ToString()+
+        Math.Round(playerdata.getMoney(),0)+
         ",-\n"+
         playerdata.GetReputation().ToString()+
         "\n"+

@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &33885628 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2350686126929209019, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
-  m_PrefabInstance: {fileID: 2350686126895328007}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &50319449
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +230,7 @@ MonoBehaviour:
   reputationChange: 2
   educationChange: 0
   feedbackText: Je hebt net lekker op de playstation gespeeld
-  feedBack: {fileID: 33885628}
+  feedBack: {fileID: 1092362011}
 --- !u!1 &69582154
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +331,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5196294215415447045, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: easyStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196294215415447045, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: maxAgeEasyStart
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196294215415447045, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: minAgeEasyStart
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7854469474978250244, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
       propertyPath: m_Name
       value: EventSystem
@@ -389,6 +390,14 @@ PrefabInstance:
     - target: {fileID: 7854469474978250297, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854469475121643412, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: userFeedbackField
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 7854469475121643412, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+      propertyPath: events.Array.data[3].options.Array.data[0].userFeedback
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
@@ -672,6 +681,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Voetballen
       objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: sceneName
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -704,8 +729,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: Voetballen
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
 --- !u!224 &486047603 stripped
 RectTransform:
@@ -813,8 +837,20 @@ PrefabInstance:
       value: School
       objectReference: {fileID: 0}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: sceneName
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
@@ -864,39 +900,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAge: 13
+  minAge: 12
   moneyChange: -3
-  energyChange: -12
-  happinessChange: 7
+  energyChange: -14
+  happinessChange: 8
   reputationChange: 6
   educationChange: 0
   feedbackText: Je bent zojuist lekker wezen sporten met je vrienden
-  feedBack: {fileID: 33885628}
---- !u!1 &672930482 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
-  m_PrefabInstance: {fileID: 486047602}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &672930486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672930482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minAge: 12
-  moneyChange: 0
-  energyChange: -8
-  happinessChange: 5
-  reputationChange: 4
-  educationChange: 0
-  feedbackText: Je bent zojuist lekker wezen voetballen
-  feedBack: {fileID: 33885628}
+  feedBack: {fileID: 1092362011}
 --- !u!1 &770342286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8414923725838610944, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
@@ -939,12 +950,24 @@ PrefabInstance:
       value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: sceneName
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: UIToToggle.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1269199743471255530, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: UIToToggle.Array.data[1]
@@ -1095,6 +1118,14 @@ PrefabInstance:
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
+      propertyPath: sceneName
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513688465905035445, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
       propertyPath: UIToToggle
       value: 
       objectReference: {fileID: 50319449}
@@ -1164,6 +1195,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 0
   sceneName: 3
+  ignoreUIConstraint: 1
+  minAgeToAllowSwitch: 0
+  minEnergytoAllowSwitch: 0
+  feedBack: {fileID: 0}
   UIToToggle: []
 --- !u!1 &1006883864 stripped
 GameObject:
@@ -1185,36 +1220,11 @@ MonoBehaviour:
   minAge: 14
   moneyChange: -20
   energyChange: -10
-  happinessChange: 8
+  happinessChange: 6
   reputationChange: 15
   educationChange: 0
   feedbackText: Je hebt net dure merkkleding gekocht in de stad
-  feedBack: {fileID: 33885628}
---- !u!1 &1027359036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
-  m_PrefabInstance: {fileID: 2719024353264920860}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1027359037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027359036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minAge: 20
-  moneyChange: 0
-  energyChange: 0
-  happinessChange: 0
-  reputationChange: 0
-  educationChange: 0
-  feedbackText: 
-  feedBack: {fileID: 33885628}
+  feedBack: {fileID: 1092362011}
 --- !u!1001 &1079918640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1342,6 +1352,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2719024352862074578, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_PrefabInstance: {fileID: 1079918640}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1092362011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2487826905716449660, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+  m_PrefabInstance: {fileID: 2350686126895328007}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1118183817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1438,8 +1459,20 @@ PrefabInstance:
       value: Werken
       objectReference: {fileID: 0}
     - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: sceneName
-      value: 5
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite
@@ -1492,11 +1525,11 @@ MonoBehaviour:
   minAge: 12
   moneyChange: 0
   energyChange: -6
-  happinessChange: 0
+  happinessChange: -4
   reputationChange: -1
   educationChange: 2
   feedbackText: Je hebt geleerd voor de aankomende toets
-  feedBack: {fileID: 33885628}
+  feedBack: {fileID: 1092362011}
 --- !u!1 &1137656384 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1211299690130267760, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
@@ -1516,8 +1549,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAge: 18
   minEnergyBeforeYouCanSleep: 20
-  feedBack: {fileID: 33885628}
+  feedBack: {fileID: 1092362011}
   navigationScript: {fileID: 1137656387}
+  interestPercentrage: 10
 --- !u!114 &1137656387 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1211299690130267761, guid: 32a25ba6fcc6bba4abb3d13f49e56e6e, type: 3}
@@ -1527,6 +1561,156 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73ca2d5f2ebd567429e40cb5978c3a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1251371088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8884906518568929633, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_Name
+      value: ScenarioScenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.731121
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68936443
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 172.66624
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906518568929646, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: lisaScene
+      value: 
+      objectReference: {fileID: 1251371090}
+    - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: answer1Btn
+      value: 
+      objectReference: {fileID: 2350686126895328009}
+    - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: answer2Btn
+      value: 
+      objectReference: {fileID: 2350686126895328008}
+    - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: continueBtn
+      value: 
+      objectReference: {fileID: 2350686126895328010}
+    - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: footBallScene
+      value: 
+      objectReference: {fileID: 1251371092}
+    - target: {fileID: 8884906519329970265, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+      propertyPath: scenarioTextBox
+      value: 
+      objectReference: {fileID: 1092362011}
+    m_RemovedComponents:
+    - {fileID: 8884906519281717205, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+    - {fileID: 8884906519676800508, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+--- !u!1 &1251371089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8884906519281717204, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+  m_PrefabInstance: {fileID: 1251371088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1251371090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251371089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 14
+  moneyChange: 0
+  energyChange: -7
+  happinessChange: 4
+  reputationChange: 5
+  educationChange: 0
+  feedbackText: Je hebt lekker Fifa gespeeld bij Lisa thuis
+  feedBack: {fileID: 1092362011}
+--- !u!1 &1251371091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8884906519676800511, guid: 292cbd5739340044f951b1696d3207bf, type: 3}
+  m_PrefabInstance: {fileID: 1251371088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1251371092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251371091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 12
+  moneyChange: 0
+  energyChange: -8
+  happinessChange: 5
+  reputationChange: 4
+  educationChange: 0
+  feedbackText: Je bent zojuist leker wezen voetballen
+  feedBack: {fileID: 1092362011}
+--- !u!1 &1413479689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7854469474978250244, guid: 441a7f4626dc7024ebc6949dd42ba8db, type: 3}
+  m_PrefabInstance: {fileID: 123394779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1413479693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413479689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058e8ef8477e6234b818755e636077e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1505544896
@@ -1604,6 +1788,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505544896}
   m_CullTransparentMesh: 1
+--- !u!1 &1698971118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+  m_PrefabInstance: {fileID: 2719024353264920860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1698971119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698971118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minAge: 19
+  moneyChange: 0
+  energyChange: 0
+  happinessChange: 0
+  reputationChange: 0
+  educationChange: 0
+  feedbackText: 
+  feedBack: {fileID: 1092362011}
 --- !u!224 &1745297358 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2719024352862074578, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
@@ -1801,17 +2010,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
   m_PrefabInstance: {fileID: 1985314920}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2079449643 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
-  m_PrefabInstance: {fileID: 1985314920}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079449642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73ca2d5f2ebd567429e40cb5978c3a30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2079449646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,13 +2019,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2079449642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a0e1a288041c74fa1225eb5128c43f, type: 3}
+  m_Script: {fileID: 11500000, guid: cc4a8f6f4f087e249b79d7fb0f929858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAgeToGoOut: 17
-  MinEnergyRequired: 15
-  feedBack: {fileID: 33885628}
-  navigationScript: {fileID: 2079449643}
+  minAge: 18
+  moneyChange: -35
+  energyChange: -20
+  happinessChange: 20
+  reputationChange: 65
+  educationChange: -3
+  feedbackText: Je bent tot in de nachtelijke uurtjes op pad geweest en hebt je vrienden
+    een rondje gegeven
+  feedBack: {fileID: 1092362011}
 --- !u!1001 &2105386582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1981,6 +2184,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 250112200}
     m_Modifications:
+    - target: {fileID: -8982562078994093684, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
     - target: {fileID: 883503073, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
       propertyPath: m_TagString
       value: SwitchScene
@@ -2081,9 +2288,54 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2487826905697319501, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.951294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487826905790615731, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.00003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487826906286074882, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 205.00003
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 685268372, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+--- !u!114 &2350686126895328008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2487826905790615732, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+  m_PrefabInstance: {fileID: 2350686126895328007}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2350686126895328009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2487826906628192124, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+  m_PrefabInstance: {fileID: 2350686126895328007}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2350686126895328010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2487826906286074883, guid: a20ffc2b182cce748a62bdd4cefe2c0c, type: 3}
+  m_PrefabInstance: {fileID: 2350686126895328007}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2719024353264920860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2178,6 +2430,22 @@ PrefabInstance:
     - target: {fileID: 2719024353777772896, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Name
       value: extraSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: feedBack
+      value: 
+      objectReference: {fileID: 1092362011}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: sceneName
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minAgeToAllowSwitch
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719024353777772897, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
+      propertyPath: minEnergytoAllowSwitch
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4870770778971883281, guid: 87b840abe7dbf9942a2a2a793295bd84, type: 3}
       propertyPath: m_Sprite

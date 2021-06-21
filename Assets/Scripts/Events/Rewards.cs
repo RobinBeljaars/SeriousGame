@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Rewards : MonoBehaviour
 {
     public enum RewardType
@@ -11,6 +12,7 @@ public class Rewards : MonoBehaviour
         SAYSOMETHINGCOOL,
         ANOTHERCUSTOMEVENT
     }
+
 
     public static void GainReward(RewardType rewardType = RewardType.NONE)
     {
@@ -61,6 +63,7 @@ public class Rewards : MonoBehaviour
     {
         Game.currentGame.PlayerData.AlterEducation(education);
     }
+
 
     //Custom reward
     private static void CustomEvent()

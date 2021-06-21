@@ -152,4 +152,8 @@ public class BaseCharacter
     public int GetEventsExperiencedThisDay(){
         return eventsExperiencedThisDay;
     }
+    public void SetStartingEnergy(float amount){
+        startingEnergy = amount;
+        energy=amount;
+    }
 }

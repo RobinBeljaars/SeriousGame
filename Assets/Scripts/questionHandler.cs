@@ -8,14 +8,12 @@ public class questionHandler : MonoBehaviour
 {
     public GameObject correctAnswerScreen;
     public Text questionText;
-    public Text answer1Text;
-    public Text answer2Text;
-    public Text answer3Text;
-    public Text answer4Text;
+    public List<Text> answertexts;
     public Button answer1Btn;
     public Button answer2Btn;
     public Button answer3Btn;
     public Button answer4Btn;
+    private int correctAnswer;
     Dictionary<int, string> questions = new Dictionary<int, string>();
     Dictionary<int, string> answers = new Dictionary<int, string>();
     List<string> cities = new List<string>();
@@ -47,28 +45,28 @@ public class questionHandler : MonoBehaviour
     void TaskOnClickAnswer1()
     {
         Debug.Log("You have clicked the button for answer 1");
-        string answer = answer1Text.text;
+        string answer = answertexts[0].text;
         checkAnswerIsCorrect(answer);
     }
 
     void TaskOnClickAnswer2()
     {
         Debug.Log("You have clicked the button for answer 2");
-        string answer = answer2Text.text;
+        string answer = answertexts[1].text;
         checkAnswerIsCorrect(answer);
     }
 
     void TaskOnClickAnswer3()
     {
         Debug.Log("You have clicked the button for answer 3");
-        string answer = answer3Text.text;
+        string answer = answertexts[2].text;
         checkAnswerIsCorrect(answer);
     }
 
     void TaskOnClickAnswer4()
     {
         Debug.Log("You have clicked the button for answer 4");
-        string answer = answer4Text.text;
+        string answer = answertexts[3].text;
         checkAnswerIsCorrect(answer);
     }
 
@@ -123,23 +121,36 @@ public class questionHandler : MonoBehaviour
 
     void setAnswers(int keyOfQuestion)
     {
+        int random = UnityEngine.Random.Range(0, answertexts.Count-1);
+        Debug.Log(random);
         if (answers.ContainsKey(keyOfQuestion))
         {
-            answer1Text.text = answers[keyOfQuestion];
+            answertexts[random].text = answers[keyOfQuestion];
+            correctAnswer = random;
         }
 
         if (keyOfQuestion <= 3)
         {
             generateCities();
-
-            answer2Text.text = getRandomCity(answer1Text.text);
-            answer3Text.text = getRandomCity(answer1Text.text);
-            answer4Text.text = getRandomCity(answer1Text.text);
+            foreach(Text t in answertexts){
+                if(t != answertexts[random]){
+                    t.text = getRandomCity(answertexts[random].text);
+                }
+            }
         } else
         {
-            answer2Text.text = "75";
-            answer3Text.text = "100";
-            answer4Text.text = "40";
+            List<String> wrongAnswers = new List<String>();
+            wrongAnswers.Add("75");
+            wrongAnswers.Add("100");
+            wrongAnswers.Add("40");
+            int answerIndex = 0;
+            foreach(Text t in answertexts){
+                if(t != answertexts[random]){
+                    var text = wrongAnswers[answerIndex];
+                    t.text = text;
+                    answerIndex++;
+                }
+            }
         }
 
         

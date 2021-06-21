@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class MapLoaded : MonoBehaviour
 {
@@ -32,13 +33,8 @@ public class MapLoaded : MonoBehaviour
             Game.currentGame.StartGame();
         }
             UpdateAvatar();
-            UpdateName();
-
-            //Should mostly only show at first launch. Placeholder for now
-            if(Game.currentGame.PlayerData.GetAge()==12&&Game.currentGame.PlayerData.getEnergy()==100){
-                feedBack.text="Welkom! Klik op de iconen om een activiteit uit te voeren.\nElke activieit kost energie en als deze op is moet je slapen.\nSucces!";
-            }
-            
+            UpdateName(); 
+            Game.currentGame.SetEventNotActive(); 
     }
     void Update()
     {
@@ -83,7 +79,7 @@ public class MapLoaded : MonoBehaviour
     void UpdateMoney()
     {
         float moneyValue = Game.currentGame.PlayerData.getMoney();
-        moneyText.text = "€ " + moneyValue.ToString();
+        moneyText.text = "€ " + Math.Round(moneyValue,2);
         if (moneyValue >= 0)
         {
             moneyText.color = new Color(0,166f/255f,3f/255f,1);

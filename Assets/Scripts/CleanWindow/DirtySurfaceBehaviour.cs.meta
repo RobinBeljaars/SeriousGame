@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f0b49d9750fdad84cb6e84f80252d988
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - slider: {instanceID: 0}
+  - Sponge: {fileID: 1185792773519449788, guid: 5edb03a59de8d974794dc7b8b487ab4b, type: 3}
+  - navigationScript: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

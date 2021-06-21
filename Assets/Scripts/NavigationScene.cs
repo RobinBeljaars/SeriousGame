@@ -10,5 +10,7 @@ public enum NavigateScene{
     MainMenu,
     MinigameQuiz,
     DishWash,
-    Score
+    Score,
+    CleanWindowScene,
+    Voetballen
 }
