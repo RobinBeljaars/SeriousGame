@@ -21,7 +21,6 @@ public class ScoreManager : MonoBehaviour
         if (int.Parse(blueScore.text) >= endCondition)
         {
             //lose condition
-            Application.Quit();
             Debug.Log("lose");
             pause.gameEnded = true;
         }
