@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public int speed;
     public int hp = 3;
     public GameObject gameOver;
+    public GameObject ins;
     public Text HPDisplay;
     public Sprite duckSprite;
     public Sprite defaultSprite;
@@ -36,6 +37,17 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = 0;
         }
         transform.position = Vector2.MoveTowards(transform.position, target, speed);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (ins.activeSelf)
+            {
+                ins.SetActive(false);
+            }
+            else
+            {
+                ins.SetActive(true);
+            }
+        }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {

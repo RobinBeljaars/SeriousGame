@@ -8,7 +8,7 @@ public class SpawnPattern : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(obj, transform.position, Quaternion.identity);
+        Instantiate(obj, transform.position, Quaternion.identity, gameObject.GetComponentInParent<Transform>()); ;
     }
 
     // Update is called once per frame
